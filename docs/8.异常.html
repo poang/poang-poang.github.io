@@ -1,0 +1,533 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8.异常.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.File类.html" />
+    
+    
+    <link rel="prev" href="7.Map.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.面向对象.html">
+            
+                <a href="1.面向对象.html">
+            
+                    
+                    1.面向对象.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.面向对象2.html">
+            
+                <a href="2.面向对象2.html">
+            
+                    
+                    2.面向对象2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Java常用类.html">
+            
+                <a href="3.Java常用类.html">
+            
+                    
+                    3.Java常用类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Java集合.html">
+            
+                <a href="4.Java集合.html">
+            
+                    
+                    4.Java集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.List接口.html">
+            
+                <a href="5.List接口.html">
+            
+                    
+                    5.List接口.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.Set集合.html">
+            
+                <a href="6.Set集合.html">
+            
+                    
+                    6.Set集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.Map.html">
+            
+                <a href="7.Map.html">
+            
+                    
+                    7.Map.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="8.异常.html">
+            
+                <a href="8.异常.html">
+            
+                    
+                    8.异常.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9.File类.html">
+            
+                <a href="9.File类.html">
+            
+                    
+                    9.File类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.IO.html">
+            
+                <a href="10.IO.html">
+            
+                    
+                    10.IO.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.缓冲流、转换流、序列流、打印流.html">
+            
+                <a href="11.缓冲流、转换流、序列流、打印流.html">
+            
+                    
+                    11.缓冲流、转换流、序列流、打印流.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12泛型.html">
+            
+                <a href="12泛型.html">
+            
+                    
+                    12泛型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.多线程.html">
+            
+                <a href="13.多线程.html">
+            
+                    
+                    13.多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.线程安全.html">
+            
+                <a href="14.线程安全.html">
+            
+                    
+                    14.线程安全.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >8.异常.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F02;&#x5E38;">&#x5F02;&#x5E38;</h1>
+<h2 id="&#x5F02;&#x5E38;&#x6982;&#x5FF5;">&#x5F02;&#x5E38;&#x6982;&#x5FF5;</h2>
+<p>&#x6307;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x4E2D;&#xFF0C;&#x51FA;&#x73B0;&#x7684;&#x975E;&#x6B63;&#x5E38;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6700;&#x7EC8;&#x5BFC;&#x81F4;JVM&#x7684;&#x975E;&#x6B63;&#x5E38;&#x505C;&#x6B62;&#x3002;</p>
+<h2 id="&#x5F02;&#x5E38;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;">&#x5F02;&#x5E38;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;</h2>
+<p>&#x5F02;&#x5E38;&#x673A;&#x5236;&#x5176;&#x5B9E;&#x662F;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;<strong>&#x627E;&#x5230;</strong>&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5F02;&#x5E38;&#x7684;&#x6839;&#x7C7B;&#x662F;<code>java.lang.Throwable</code>&#xFF0C;&#x5176;&#x4E0B;&#x6709;&#x4E24;&#x4E2A;&#x5B50;&#x7C7B;&#xFF1A;<code>java.lang.Error</code>&#x4E0E;<code>java.lang.Exception</code>&#xFF0C;&#x5E73;&#x5E38;&#x6240;&#x8BF4;&#x7684;&#x5F02;&#x5E38;&#x6307;<code>java.lang.Exception</code>&#x3002;</p>
+<p><img src="https://poangspic.oss-cn-beijing.aliyuncs.com/img/image-20220315183255010.png" alt="image-20220315183255010"></p>
+<p> java.lang.Throwable
+         |-----java.lang.Error:&#x4E00;&#x822C;&#x4E0D;&#x7F16;&#x5199;&#x9488;&#x5BF9;&#x6027;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;
+         |-----java.lang.Exception:&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5F02;&#x5E38;&#x7684;&#x5904;&#x7406;
+             |------&#x7F16;&#x8BD1;&#x65F6;&#x5F02;&#x5E38;(checked)
+                     |-----IOException
+                     |-----FileNotFoundException
+                     |-----ClassNotFoundException
+             |------&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x5E38;(unchecked,RuntimeException)
+                     |-----NullPointerException
+                     |-----ArrayIndexOutOfBoundsException
+                     |-----ClassCastException
+                     |-----NumberFormatException
+                     |-----InputMismatchException
+                     |-----ArithmeticException</p>
+<h2 id="&#x5F02;&#x5E38;&#x5206;&#x7C7B;">&#x5F02;&#x5E38;&#x5206;&#x7C7B;</h2>
+<p><strong>&#x5F02;&#x5E38;(Exception)&#x7684;&#x5206;&#x7C7B;</strong>:&#x6839;&#x636E;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x671F;&#x8FD8;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x671F;&#x53BB;&#x68C0;&#x67E5;&#x5F02;&#x5E38;?</p>
+<ul>
+<li><strong>&#x7F16;&#x8BD1;&#x65F6;&#x671F;&#x5F02;&#x5E38;</strong>:checked&#x5F02;&#x5E38;&#x3002;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x671F;,&#x5C31;&#x4F1A;&#x68C0;&#x67E5;,&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5904;&#x7406;&#x5F02;&#x5E38;,&#x5219;&#x7F16;&#x8BD1;&#x5931;&#x8D25;&#x3002;(&#x5982;&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x5316;&#x5F02;&#x5E38;)</li>
+<li><strong>&#x8FD0;&#x884C;&#x65F6;&#x671F;&#x5F02;&#x5E38;</strong>:runtime&#x5F02;&#x5E38;&#x3002;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x671F;,&#x68C0;&#x67E5;&#x5F02;&#x5E38;.&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x671F;,&#x8FD0;&#x884C;&#x5F02;&#x5E38;&#x4E0D;&#x4F1A;&#x7F16;&#x8BD1;&#x5668;&#x68C0;&#x6D4B;(&#x4E0D;&#x62A5;&#x9519;)&#x3002;(&#x5982;&#x6570;&#x5B66;&#x5F02;&#x5E38;)</li>
+</ul>
+<h3 id="&#x5F02;&#x5E38;&#x5904;&#x7406;&#xFF1A;&#x6293;&#x629B;&#x6A21;&#x578B;">&#x5F02;&#x5E38;&#x5904;&#x7406;&#xFF1A;&#x6293;&#x629B;&#x6A21;&#x578B;</h3>
+<ul>
+<li>&#x8FC7;&#x7A0B;&#x4E00;&#xFF1A;
+&quot;&#x629B;&quot;&#xFF1A;&#x7A0B;&#x5E8F;&#x5728;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x5C31;&#x4F1A;&#x5728;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x5904;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x5E76;&#x5C06;&#x6B64;&#x5BF9;&#x8C61;&#x629B;&#x51FA;&#x3002;  &#x4E00;&#x65E6;&#x629B;&#x51FA;&#x5BF9;&#x8C61;&#x4EE5;&#x540E;&#xFF0C;&#x5176;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x518D;&#x6267;&#x884C;&#x3002;</li>
+</ul>
+<p>&#x5173;&#x4E8E;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x7684;&#x4EA7;&#x751F;&#xFF1A;</p>
+<pre><code>1.  &#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;
+2.  &#x624B;&#x52A8;&#x7684;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x629B;&#x51FA;&#xFF08;throw&#xFF09;
+</code></pre><ul>
+<li><p>&#x8FC7;&#x7A0B;&#x4E8C;&#xFF1A;&quot;&#x6293;&quot;&#xFF1A;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x5F02;&#x5E38;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li><p>try-catch-finally </p>
+</li>
+<li><p>throws</p>
+<p>&#x8BF4;&#x660E;&#xFF1A; </p>
+<ol>
+<li>finally&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF1B;&#x5373;&#x4F7F;catch&#x4E2D;&#x53C8;&#x51FA;&#x73B0;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;try&#x4E2D;&#x6709;return&#x8BED;&#x53E5;&#xFF0C;finally&#x4E5F;&#x4E00;&#x5B9A;&#x4F1A;&#x88AB;&#x6267;&#x884C;
+&#x5E94;&#x7528;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x3001;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;&#x3001;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;Socket&#x7B49;&#x8D44;&#x6E90;&#xFF0C;JVM&#x662F;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x81EA;&#x613F;&#x91CA;&#x653E;&#xFF0C;&#x9700;&#x8981;&#x58F0;&#x660E;&#x5728;finally&#x4E2D;</li>
+<li>&#x4F7F;&#x7528;try&#x5C06;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x5305;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6839;&#x636E;&#x6B64;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x53BB;catch&#x4E2D;&#x8FDB;&#x884C;&#x5339;&#x914D;</li>
+<li>&#x4E00;&#x65E6;try&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x5339;&#x914D;&#x5230;&#x67D0;&#x4E00;&#x4E2A;catch&#x65F6;&#xFF0C;&#x5C31;&#x8FDB;&#x5165;catch&#x4E2D;&#x8FDB;&#x884C;&#x5F02;&#x5E38;&#x7684;&#x5904;&#x7406;&#x3002;&#x4E00;&#x65E6;&#x5904;&#x7406;&#x5B8C;&#x6210;&#xFF0C;&#x5C31;&#x8DF3;&#x51FA;&#x5F53;&#x524D;&#x7684;try-catch&#x7ED3;&#x6784;&#xFF08;&#x5728;&#x6CA1;&#x6709;&#x5199;finally&#x7684;&#x60C5;&#x51B5;&#xFF09;&#x3002;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x5176;&#x540E;&#x7684;&#x4EE3;&#x7801;</li>
+<li>catch&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B50;&#x7236;&#x7C7B;&#x5173;&#x7CFB;&#xFF0C;&#x5219;&#x8C01;&#x58F0;&#x660E;&#x5728;&#x4E0A;&#xFF0C;&#x8C01;&#x58F0;&#x660E;&#x5728;&#x4E0B;&#x65E0;&#x6240;&#x8C13;&#x3002; catch&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x5982;&#x679C;&#x6EE1;&#x8DB3;&#x5B50;&#x7236;&#x7C7B;&#x5173;&#x7CFB;&#xFF0C;&#x5219;&#x8981;&#x6C42;&#x5B50;&#x7C7B;&#x4E00;&#x5B9A;&#x58F0;&#x660E;&#x5728;&#x7236;&#x7C7B;&#x7684;&#x4E0A;&#x9762;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x62A5;&#x9519;</li>
+<li>&#x5E38;&#x7528;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x5904;&#x7406;&#x7684;&#x65B9;&#x5F0F;&#xFF1A; <ul>
+<li>String  getMessage()    </li>
+<li>printStackTrace()</li>
+</ul>
+</li>
+<li>&#x5728;try&#x7ED3;&#x6784;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x518D;&#x51FA;&#x4E86;try&#x7ED3;&#x6784;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x8C03;&#x7528;</li>
+<li>try-catch-finally&#x7ED3;&#x6784;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;</li>
+</ol>
+</li>
+</ol>
+<h3 id="&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x7684;&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;throws-&#x5F02;&#x5E38;&#x7C7B;&#x578B;">&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x7684;&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;throws +&#x5F02;&#x5E38;&#x7C7B;&#x578B;</h3>
+<ol>
+<li>&#x201C;throws + &#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x201D;&#x5199;&#x5728;&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#x5904;&#x3002;&#x6307;&#x660E;&#x6B64;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x3002;&#x4E00;&#x65E6;&#x5F53;&#x65B9;&#x6CD5;&#x4F53;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x4ECD;&#x4F1A;&#x5728;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x5904;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6B64;&#x5BF9;&#x8C61;&#x6EE1;&#x8DB3;throws&#x540E;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5F02;&#x5E38;&#x629B;&#x51FA;&#x3002;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x540E;&#x7EED;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x518D;&#x6267;&#x884C;&#x3002;</li>
+<li>try-catch-finally&#xFF1A;&#x771F;&#x6B63;&#x7684;&#x5C06;&#x5F02;&#x5E38;&#x7ED9;&#x5904;&#x7406;&#x6389;&#x4E86;&#x3002;
+throws&#x7684;&#x65B9;&#x5F0F;&#x53EA;&#x662F;&#x5C06;&#x5F02;&#x5E38;&#x629B;&#x7ED9;&#x4E86;&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x5C06;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x6389;&#x3002;</li>
+<li>&#x5F00;&#x53D1;&#x4E2D;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4F7F;&#x7528;try-catch-finally &#x8FD8;&#x662F;&#x4F7F;&#x7528;throws&#xFF1F;
+3.1 &#x5982;&#x679C;&#x7236;&#x7C7B;&#x4E2D;&#x88AB;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;throws&#x65B9;&#x5F0F;&#x5904;&#x7406;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;throws&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x6709;&#x5F02;&#x5E38;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;try-catch-finally&#x65B9;&#x5F0F;&#x5904;&#x7406;&#x3002;
+3.2 &#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;a&#x4E2D;&#xFF0C;&#x5148;&#x540E;&#x53C8;&#x8C03;&#x7528;&#x4E86;&#x53E6;&#x5916;&#x7684;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x9012;&#x8FDB;&#x5173;&#x7CFB;&#x6267;&#x884C;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x8FD9;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;throws&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x800C;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;a&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;try-catch-finally&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h3 id="&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;">&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;</h3>
+<ol>
+<li>&#x7EE7;&#x627F;&#x4E8E;&#x73B0;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7ED3;&#x6784;&#xFF1A;RuntimeException &#x3001;Exception</li>
+<li>&#x63D0;&#x4F9B;&#x5168;&#x5C40;&#x5E38;&#x91CF;&#xFF1A;serialVersionUID</li>
+<li>&#x63D0;&#x4F9B;&#x91CD;&#x8F7D;&#x7684;&#x6784;&#x9020;&#x5668;</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x7A7A;&#x53C2;&#x6784;&#x9020;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">LoginException</span><span class="hljs-params">()</span> </span>{
+    }
+
+    <span class="hljs-comment">/**
+     *
+     * <span class="hljs-doctag">@param</span> message &#x8868;&#x793A;&#x5F02;&#x5E38;&#x63D0;&#x793A;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">LoginException</span><span class="hljs-params">(String message)</span> </span>{
+        <span class="hljs-keyword">super</span>(message);
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+    <span class="hljs-comment">// &#x6A21;&#x62DF;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x5B58;&#x5728;&#x8D26;&#x53F7;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String[] names = {<span class="hljs-string">&quot;bill&quot;</span>,<span class="hljs-string">&quot;hill&quot;</span>,<span class="hljs-string">&quot;jill&quot;</span>};
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{     
+        <span class="hljs-comment">//&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+        <span class="hljs-keyword">try</span>{
+              <span class="hljs-comment">// &#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801;</span>
+            checkUsername(<span class="hljs-string">&quot;nill&quot;</span>);
+            System.out.println(<span class="hljs-string">&quot;&#x6CE8;&#x518C;&#x6210;&#x529F;&quot;</span>);<span class="hljs-comment">//&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F02;&#x5E38;&#x5C31;&#x662F;&#x6CE8;&#x518C;&#x6210;&#x529F;</span>
+        }<span class="hljs-keyword">catch</span>(LoginException e){
+            <span class="hljs-comment">//&#x5904;&#x7406;&#x5F02;&#x5E38;</span>
+            e.printStackTrace();
+        }
+    }
+
+    <span class="hljs-comment">//&#x5224;&#x65AD;&#x5F53;&#x524D;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+    <span class="hljs-comment">//&#x56E0;&#x4E3A;&#x662F;&#x7F16;&#x8BD1;&#x671F;&#x5F02;&#x5E38;&#xFF0C;&#x53C8;&#x60F3;&#x8C03;&#x7528;&#x8005;&#x53BB;&#x5904;&#x7406; &#x6240;&#x4EE5;&#x58F0;&#x660E;&#x8BE5;&#x5F02;&#x5E38;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">checkUsername</span><span class="hljs-params">(String uname)</span> <span class="hljs-keyword">throws</span> LoginException</span>{
+        <span class="hljs-keyword">for</span> (String name : names) {
+            <span class="hljs-keyword">if</span>(name.equals(uname)){<span class="hljs-comment">//&#x5982;&#x679C;&#x540D;&#x5B57;&#x5728;&#x8FD9;&#x91CC;&#x9762; &#x5C31;&#x629B;&#x51FA;&#x767B;&#x9646;&#x5F02;&#x5E38;</span>
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> LoginException(<span class="hljs-string">&quot;&#x4EB2;&quot;</span>+name+<span class="hljs-string">&quot;&#x5DF2;&#x7ECF;&#x88AB;&#x6CE8;&#x518C;&#x4E86;&#xFF01;&quot;</span>);
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.Map.html" class="navigation navigation-prev " aria-label="Previous page: 7.Map.md">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.File类.html" class="navigation navigation-next " aria-label="Next page: 9.File类.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8.异常.md","level":"1.9","depth":1,"next":{"title":"9.File类.md","level":"1.10","depth":1,"path":"9.File类.md","ref":"9.File类.md","articles":[]},"previous":{"title":"7.Map.md","level":"1.8","depth":1,"path":"7.Map.md","ref":"7.Map.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"8.异常.md","mtime":"2022-03-15T11:08:42.377Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-11T12:32:44.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
