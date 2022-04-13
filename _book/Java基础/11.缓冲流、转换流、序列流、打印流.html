@@ -1,0 +1,1161 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.缓冲流、转换流、序列流、打印流.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12泛型.html" />
+    
+    
+    <link rel="prev" href="10.IO.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ADME.md">
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.面向对象.html">
+            
+                <a href="1.面向对象.html">
+            
+                    
+                    1.面向对象.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2.面向对象2.html">
+            
+                <a href="2.面向对象2.html">
+            
+                    
+                    2.面向对象2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.Java常用类.html">
+            
+                <a href="3.Java常用类.html">
+            
+                    
+                    3.Java常用类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4.Java集合.html">
+            
+                <a href="4.Java集合.html">
+            
+                    
+                    4.Java集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5.List接口.html">
+            
+                <a href="5.List接口.html">
+            
+                    
+                    5.List接口.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6.Set集合.html">
+            
+                <a href="6.Set集合.html">
+            
+                    
+                    6.Set集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7.Map.html">
+            
+                <a href="7.Map.html">
+            
+                    
+                    7.Map.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="8.异常.html">
+            
+                <a href="8.异常.html">
+            
+                    
+                    8.异常.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="9.File类.html">
+            
+                <a href="9.File类.html">
+            
+                    
+                    9.File类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="10.IO.html">
+            
+                <a href="10.IO.html">
+            
+                    
+                    10.IO.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.11" data-path="11.缓冲流、转换流、序列流、打印流.html">
+            
+                <a href="11.缓冲流、转换流、序列流、打印流.html">
+            
+                    
+                    11.缓冲流、转换流、序列流、打印流.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="12泛型.html">
+            
+                <a href="12泛型.html">
+            
+                    
+                    12泛型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="13.多线程.html">
+            
+                <a href="13.多线程.html">
+            
+                    
+                    13.多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="14.线程安全.html">
+            
+                <a href="14.线程安全.html">
+            
+                    
+                    14.线程安全.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../算法/">
+            
+                <a href="../算法/">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../算法/2022-03-12.html">
+            
+                <a href="../算法/2022-03-12.html">
+            
+                    
+                    二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../算法/2022-03-13.html">
+            
+                <a href="../算法/2022-03-13.html">
+            
+                    
+                    34. 在排序数组中查找元素的第一个和最后一个位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../算法/2022-03-14.html">
+            
+                <a href="../算法/2022-03-14.html">
+            
+                    
+                    27.移除元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../算法/2022-03-15.html">
+            
+                <a href="../算法/2022-03-15.html">
+            
+                    
+                     977. 有序数组的平方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../算法/2022-03-16.html">
+            
+                <a href="../算法/2022-03-16.html">
+            
+                    
+                    209. 长度最小的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../算法/2022-03-17.html">
+            
+                <a href="../算法/2022-03-17.html">
+            
+                    
+                    904. 水果成篮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../算法/2022-03-18.html">
+            
+                <a href="../算法/2022-03-18.html">
+            
+                    
+                    76. 最小覆盖子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../算法/2022-03-21.html">
+            
+                <a href="../算法/2022-03-21.html">
+            
+                    
+                    59. 螺旋矩阵 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../算法/2022-03-22.html">
+            
+                <a href="../算法/2022-03-22.html">
+            
+                    
+                    203. 移除链表元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../算法/2022-03-23.html">
+            
+                <a href="../算法/2022-03-23.html">
+            
+                    
+                    707. 设计链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../算法/2022-03-24.html">
+            
+                <a href="../算法/2022-03-24.html">
+            
+                    
+                    206. 反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../算法/2022-03-26.html">
+            
+                <a href="../算法/2022-03-26.html">
+            
+                    
+                    24. 两两交换链表中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../算法/2022-03-28.html">
+            
+                <a href="../算法/2022-03-28.html">
+            
+                    
+                    19. 删除链表的倒数第 N 个结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11.缓冲流、转换流、序列流、打印流.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7F13;&#x51B2;&#x6D41;">&#x7F13;&#x51B2;&#x6D41;</h1>
+<p>&#x8FD9;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x66F4;&#x5F3A;&#x5927;&#x7684;&#x6D41;&#x3002;&#x6BD4;&#x5982;&#x80FD;&#x591F;&#x9AD8;&#x6548;&#x8BFB;&#x5199;&#x7684;&#x7F13;&#x51B2;&#x6D41;&#xFF0C;&#x80FD;&#x591F;&#x8F6C;&#x6362;&#x7F16;&#x7801;&#x7684;&#x8F6C;&#x6362;&#x6D41;&#xFF0C;&#x80FD;&#x591F;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6D41;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x66F4;&#x4E3A;&#x5F3A;&#x5927;&#x7684;&#x6D41;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x57FA;&#x672C;&#x7684;&#x6D41;&#x5BF9;&#x8C61;&#x57FA;&#x7840;&#x4E4B;&#x4E0A;&#x521B;&#x5EFA;&#x800C;&#x6765;&#x7684;&#x3002;</p>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<p>&#x7F13;&#x51B2;&#x6D41;,&#x4E5F;&#x53EB;&#x9AD8;&#x6548;&#x6D41;&#xFF0C;&#x662F;&#x5BF9;4&#x4E2A;&#x57FA;&#x672C;&#x7684;<code>FileXxx</code> &#x6D41;&#x7684;&#x589E;&#x5F3A;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x662F;4&#x4E2A;&#x6D41;&#xFF0C;&#x6309;&#x7167;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5206;&#x7C7B;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5B57;&#x8282;&#x7F13;&#x51B2;&#x6D41;</strong>&#xFF1A;<code>BufferedInputStream</code>&#xFF0C;<code>BufferedOutputStream</code> </li>
+<li><strong>&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x6D41;</strong>&#xFF1A;<code>BufferedReader</code>&#xFF0C;<code>BufferedWriter</code></li>
+</ul>
+<p>&#x7F13;&#x51B2;&#x6D41;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#xFF0C;&#x662F;&#x5728;&#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x7F6E;&#x7684;&#x9ED8;&#x8BA4;&#x5927;&#x5C0F;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x7EC4;&#xFF0C;&#x901A;&#x8FC7;&#x7F13;&#x51B2;&#x533A;&#x8BFB;&#x5199;&#xFF0C;&#x51CF;&#x5C11;&#x7CFB;&#x7EDF;IO&#x6B21;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x8BFB;&#x5199;&#x7684;&#x6548;&#x7387;&#x3002;</p>
+<h2 id="&#x5B57;&#x8282;&#x7F13;&#x51B2;&#x6D41;">&#x5B57;&#x8282;&#x7F13;&#x51B2;&#x6D41;</h2>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>public BufferedInputStream(InputStream in)</code> &#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; &#x65B0;&#x7684;&#x7F13;&#x51B2;&#x8F93;&#x5165;&#x6D41;&#x3002; </li>
+<li><code>public BufferedOutputStream(OutputStream out)</code>&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x8F93;&#x51FA;&#x6D41;&#x3002;</li>
+</ul>
+<h3 id="&#x6548;&#x7387;&#x6D4B;&#x8BD5;">&#x6548;&#x7387;&#x6D4B;&#x8BD5;</h3>
+<ol>
+<li>&#x57FA;&#x672C;&#x6D41;</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">long</span> start = System.currentTimeMillis();
+        <span class="hljs-keyword">try</span> {
+            FileInputStream fis = <span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;video.mp4&quot;</span>);
+            FileOutputStream fos = <span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;copy&quot;</span>);
+
+            <span class="hljs-keyword">byte</span>[] b = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];
+            <span class="hljs-keyword">int</span> len;
+            <span class="hljs-keyword">while</span> ((len = fis.read(b)) != -<span class="hljs-number">1</span>){
+                fos.write(len);
+            }
+
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+        }
+        <span class="hljs-keyword">long</span> end = System.currentTimeMillis();
+        System.out.println(<span class="hljs-string">&quot;&#x590D;&#x5236;&#x7684;&#x65F6;&#x95F4;&quot;</span> + <span class="hljs-string">&quot;----&quot;</span> + (end - start));
+        <span class="hljs-comment">//&#x82B1;&#x8D39;&#x65F6;&#x95F4;184ms</span>
+</code></pre>
+<ol>
+<li>&#x7F13;&#x51B2;&#x6D41;</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">long</span> start = System.currentTimeMillis();
+        BufferedInputStream bis = <span class="hljs-keyword">null</span>;
+        BufferedOutputStream bos = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            FileInputStream fis = <span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;video.mp4&quot;</span>);
+            FileOutputStream fos = <span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;copy.mp4&quot;</span>);
+            <span class="hljs-comment">//&#x9020;&#x7F13;&#x51B2;&#x6D41;</span>
+            bis = <span class="hljs-keyword">new</span> BufferedInputStream(fis);
+            bos = <span class="hljs-keyword">new</span> BufferedOutputStream(fos);
+            <span class="hljs-comment">//&#x590D;&#x5236;</span>
+            <span class="hljs-keyword">byte</span>[] buffer = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];
+            <span class="hljs-keyword">int</span> len;
+            <span class="hljs-keyword">while</span>((len = bis.read(buffer)) != -<span class="hljs-number">1</span>){
+                bos.write(len);
+            }
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (bos != <span class="hljs-keyword">null</span> ){
+                <span class="hljs-keyword">try</span> {
+                    bos.close();
+                } <span class="hljs-keyword">catch</span> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            <span class="hljs-keyword">if</span> (bis != <span class="hljs-keyword">null</span>){
+                <span class="hljs-keyword">try</span> {
+                    bis.close();
+                } <span class="hljs-keyword">catch</span> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        <span class="hljs-keyword">long</span> end = System.currentTimeMillis();
+        System.out.println(<span class="hljs-string">&quot;&#x590D;&#x5236;&#x7684;&#x65F6;&#x95F4;&quot;</span> + <span class="hljs-string">&quot;----&quot;</span> + (end - start));
+    }   <span class="hljs-comment">//&#x82B1;&#x8D39;&#x65F6;&#x95F4;24ms</span>
+</code></pre>
+<h2 id="&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x6D41;">&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x6D41;</h2>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>public BufferedReader(Reader in)</code> &#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; &#x65B0;&#x7684;&#x7F13;&#x51B2;&#x8F93;&#x5165;&#x6D41;&#x3002; </li>
+<li><code>public BufferedWriter(Writer out)</code>&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F13;&#x51B2;&#x8F93;&#x51FA;&#x6D41;&#x3002;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x8F93;&#x5165;&#x6D41;</span>
+BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;br.txt&quot;</span>));
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x8F93;&#x51FA;&#x6D41;</span>
+BufferedWriter bw = <span class="hljs-keyword">new</span> BufferedWriter(<span class="hljs-keyword">new</span> FileWriter(<span class="hljs-string">&quot;bw.txt&quot;</span>));
+</code></pre>
+<h3 id="&#x7279;&#x6709;&#x65B9;&#x6CD5;">&#x7279;&#x6709;&#x65B9;&#x6CD5;</h3>
+<p>&#x5B57;&#x7B26;&#x7F13;&#x51B2;&#x6D41;&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#x4E0E;&#x666E;&#x901A;&#x5B57;&#x7B26;&#x6D41;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x4E00;&#x81F4;&#xFF0C;&#x4E0D;&#x518D;&#x9610;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x5B83;&#x4EEC;&#x5177;&#x5907;&#x7684;&#x7279;&#x6709;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li>BufferedReader&#xFF1A;<code>public String readLine()</code>: &#x8BFB;&#x4E00;&#x884C;&#x6587;&#x5B57;&#x3002; </li>
+<li>BufferedWriter&#xFF1A;<code>public void newLine()</code>: &#x5199;&#x4E00;&#x884C;&#x884C;&#x5206;&#x9694;&#x7B26;,&#x7531;&#x7CFB;&#x7EDF;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x7B26;&#x53F7;&#x3002;</li>
+</ul>
+<p><code>readline</code>&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-java">        BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;a.txt&quot;</span>));
+
+        <span class="hljs-keyword">try</span> {
+            String line = <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">while</span>((line = br.readLine()) != <span class="hljs-keyword">null</span>){
+                System.out.println(line);
+                System.out.println(<span class="hljs-string">&quot;-------&quot;</span>);
+            }
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (br != <span class="hljs-keyword">null</span>){
+                <span class="hljs-keyword">try</span> {
+                    br.close();
+                } <span class="hljs-keyword">catch</span> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+</code></pre>
+<p><code>newLine</code>&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-java">        BufferedWriter bw = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            bw = <span class="hljs-keyword">new</span> BufferedWriter(<span class="hljs-keyword">new</span> FileWriter(<span class="hljs-string">&quot;a.txt&quot;</span>));
+            bw.write(<span class="hljs-string">&quot;&#x5F88;&#x70E6;&quot;</span>);
+            bw.newLine();
+            bw.write(<span class="hljs-string">&quot;&#x8001;&#x4F59;&quot;</span>);
+
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (bw != <span class="hljs-keyword">null</span>){
+                <span class="hljs-keyword">try</span> {
+                    bw.close();
+                } <span class="hljs-keyword">catch</span> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+</code></pre>
+<h2 id="&#x7EC3;&#x4E60;&#xFF1A;&#x6587;&#x672C;&#x6392;&#x5E8F;">&#x7EC3;&#x4E60;&#xFF1A;&#x6587;&#x672C;&#x6392;&#x5E8F;</h2>
+<pre><code>3.&#x4F8D;&#x4E2D;&#x3001;&#x4F8D;&#x90CE;&#x90ED;&#x6538;&#x4E4B;&#x3001;&#x8D39;&#x794E;&#x3001;&#x8463;&#x5141;&#x7B49;&#xFF0C;&#x6B64;&#x7686;&#x826F;&#x5B9E;&#xFF0C;&#x5FD7;&#x8651;&#x5FE0;&#x7EAF;&#xFF0C;&#x662F;&#x4EE5;&#x5148;&#x5E1D;&#x7B80;&#x62D4;&#x4EE5;&#x9057;&#x965B;&#x4E0B;&#x3002;&#x611A;&#x4EE5;&#x4E3A;&#x5BAB;&#x4E2D;&#x4E4B;&#x4E8B;&#xFF0C;&#x4E8B;&#x65E0;&#x5927;&#x5C0F;&#xFF0C;&#x6089;&#x4EE5;&#x54A8;&#x4E4B;&#xFF0C;&#x7136;&#x540E;&#x65BD;&#x884C;&#xFF0C;&#x5FC5;&#x5F97;&#x88E8;&#x8865;&#x9619;&#x6F0F;&#xFF0C;&#x6709;&#x6240;&#x5E7F;&#x76CA;&#x3002;
+8.&#x613F;&#x965B;&#x4E0B;&#x6258;&#x81E3;&#x4EE5;&#x8BA8;&#x8D3C;&#x5174;&#x590D;&#x4E4B;&#x6548;&#xFF0C;&#x4E0D;&#x6548;&#xFF0C;&#x5219;&#x6CBB;&#x81E3;&#x4E4B;&#x7F6A;&#xFF0C;&#x4EE5;&#x544A;&#x5148;&#x5E1D;&#x4E4B;&#x7075;&#x3002;&#x82E5;&#x65E0;&#x5174;&#x5FB7;&#x4E4B;&#x8A00;&#xFF0C;&#x5219;&#x8D23;&#x6538;&#x4E4B;&#x3001;&#x794E;&#x3001;&#x5141;&#x7B49;&#x4E4B;&#x6162;&#xFF0C;&#x4EE5;&#x5F70;&#x5176;&#x548E;&#xFF1B;&#x965B;&#x4E0B;&#x4EA6;&#x5B9C;&#x81EA;&#x8C0B;&#xFF0C;&#x4EE5;&#x54A8;&#x8BF9;&#x5584;&#x9053;&#xFF0C;&#x5BDF;&#x7EB3;&#x96C5;&#x8A00;&#xFF0C;&#x6DF1;&#x8FFD;&#x5148;&#x5E1D;&#x9057;&#x8BCF;&#xFF0C;&#x81E3;&#x4E0D;&#x80DC;&#x53D7;&#x6069;&#x611F;&#x6FC0;&#x3002;
+4.&#x5C06;&#x519B;&#x5411;&#x5BA0;&#xFF0C;&#x6027;&#x884C;&#x6DD1;&#x5747;&#xFF0C;&#x6653;&#x7545;&#x519B;&#x4E8B;&#xFF0C;&#x8BD5;&#x7528;&#x4E4B;&#x4E8E;&#x6614;&#x65E5;&#xFF0C;&#x5148;&#x5E1D;&#x79F0;&#x4E4B;&#x66F0;&#x80FD;&#xFF0C;&#x662F;&#x4EE5;&#x4F17;&#x8BAE;&#x4E3E;&#x5BA0;&#x4E3A;&#x7763;&#x3002;&#x611A;&#x4EE5;&#x4E3A;&#x8425;&#x4E2D;&#x4E4B;&#x4E8B;&#xFF0C;&#x6089;&#x4EE5;&#x54A8;&#x4E4B;&#xFF0C;&#x5FC5;&#x80FD;&#x4F7F;&#x884C;&#x9635;&#x548C;&#x7766;&#xFF0C;&#x4F18;&#x52A3;&#x5F97;&#x6240;&#x3002;
+2.&#x5BAB;&#x4E2D;&#x5E9C;&#x4E2D;&#xFF0C;&#x4FF1;&#x4E3A;&#x4E00;&#x4F53;&#xFF0C;&#x965F;&#x7F5A;&#x81E7;&#x5426;&#xFF0C;&#x4E0D;&#x5B9C;&#x5F02;&#x540C;&#x3002;&#x82E5;&#x6709;&#x4F5C;&#x5978;&#x72AF;&#x79D1;&#x53CA;&#x4E3A;&#x5FE0;&#x5584;&#x8005;&#xFF0C;&#x5B9C;&#x4ED8;&#x6709;&#x53F8;&#x8BBA;&#x5176;&#x5211;&#x8D4F;&#xFF0C;&#x4EE5;&#x662D;&#x965B;&#x4E0B;&#x5E73;&#x660E;&#x4E4B;&#x7406;&#xFF0C;&#x4E0D;&#x5B9C;&#x504F;&#x79C1;&#xFF0C;&#x4F7F;&#x5185;&#x5916;&#x5F02;&#x6CD5;&#x4E5F;&#x3002;
+1.&#x5148;&#x5E1D;&#x521B;&#x4E1A;&#x672A;&#x534A;&#x800C;&#x4E2D;&#x9053;&#x5D29;&#x6B82;&#xFF0C;&#x4ECA;&#x5929;&#x4E0B;&#x4E09;&#x5206;&#xFF0C;&#x76CA;&#x5DDE;&#x75B2;&#x5F0A;&#xFF0C;&#x6B64;&#x8BDA;&#x5371;&#x6025;&#x5B58;&#x4EA1;&#x4E4B;&#x79CB;&#x4E5F;&#x3002;&#x7136;&#x4F8D;&#x536B;&#x4E4B;&#x81E3;&#x4E0D;&#x61C8;&#x4E8E;&#x5185;&#xFF0C;&#x5FE0;&#x5FD7;&#x4E4B;&#x58EB;&#x5FD8;&#x8EAB;&#x4E8E;&#x5916;&#x8005;&#xFF0C;&#x76D6;&#x8FFD;&#x5148;&#x5E1D;&#x4E4B;&#x6B8A;&#x9047;&#xFF0C;&#x6B32;&#x62A5;&#x4E4B;&#x4E8E;&#x965B;&#x4E0B;&#x4E5F;&#x3002;&#x8BDA;&#x5B9C;&#x5F00;&#x5F20;&#x5723;&#x542C;&#xFF0C;&#x4EE5;&#x5149;&#x5148;&#x5E1D;&#x9057;&#x5FB7;&#xFF0C;&#x6062;&#x5F18;&#x5FD7;&#x58EB;&#x4E4B;&#x6C14;&#xFF0C;&#x4E0D;&#x5B9C;&#x5984;&#x81EA;&#x83F2;&#x8584;&#xFF0C;&#x5F15;&#x55BB;&#x5931;&#x4E49;&#xFF0C;&#x4EE5;&#x585E;&#x5FE0;&#x8C0F;&#x4E4B;&#x8DEF;&#x4E5F;&#x3002;
+9.&#x4ECA;&#x5F53;&#x8FDC;&#x79BB;&#xFF0C;&#x4E34;&#x8868;&#x6D95;&#x96F6;&#xFF0C;&#x4E0D;&#x77E5;&#x6240;&#x8A00;&#x3002;
+6.&#x81E3;&#x672C;&#x5E03;&#x8863;&#xFF0C;&#x8EAC;&#x8015;&#x4E8E;&#x5357;&#x9633;&#xFF0C;&#x82DF;&#x5168;&#x6027;&#x547D;&#x4E8E;&#x4E71;&#x4E16;&#xFF0C;&#x4E0D;&#x6C42;&#x95FB;&#x8FBE;&#x4E8E;&#x8BF8;&#x4FAF;&#x3002;&#x5148;&#x5E1D;&#x4E0D;&#x4EE5;&#x81E3;&#x5351;&#x9119;&#xFF0C;&#x7325;&#x81EA;&#x6789;&#x5C48;&#xFF0C;&#x4E09;&#x987E;&#x81E3;&#x4E8E;&#x8349;&#x5E90;&#x4E4B;&#x4E2D;&#xFF0C;&#x54A8;&#x81E3;&#x4EE5;&#x5F53;&#x4E16;&#x4E4B;&#x4E8B;&#xFF0C;&#x7531;&#x662F;&#x611F;&#x6FC0;&#xFF0C;&#x9042;&#x8BB8;&#x5148;&#x5E1D;&#x4EE5;&#x9A71;&#x9A70;&#x3002;&#x540E;&#x503C;&#x503E;&#x8986;&#xFF0C;&#x53D7;&#x4EFB;&#x4E8E;&#x8D25;&#x519B;&#x4E4B;&#x9645;&#xFF0C;&#x5949;&#x547D;&#x4E8E;&#x5371;&#x96BE;&#x4E4B;&#x95F4;&#xFF0C;&#x5C14;&#x6765;&#x4E8C;&#x5341;&#x6709;&#x4E00;&#x5E74;&#x77E3;&#x3002;
+7.&#x5148;&#x5E1D;&#x77E5;&#x81E3;&#x8C28;&#x614E;&#xFF0C;&#x6545;&#x4E34;&#x5D29;&#x5BC4;&#x81E3;&#x4EE5;&#x5927;&#x4E8B;&#x4E5F;&#x3002;&#x53D7;&#x547D;&#x4EE5;&#x6765;&#xFF0C;&#x5919;&#x591C;&#x5FE7;&#x53F9;&#xFF0C;&#x6050;&#x4ED8;&#x6258;&#x4E0D;&#x6548;&#xFF0C;&#x4EE5;&#x4F24;&#x5148;&#x5E1D;&#x4E4B;&#x660E;&#xFF0C;&#x6545;&#x4E94;&#x6708;&#x6E21;&#x6CF8;&#xFF0C;&#x6DF1;&#x5165;&#x4E0D;&#x6BDB;&#x3002;&#x4ECA;&#x5357;&#x65B9;&#x5DF2;&#x5B9A;&#xFF0C;&#x5175;&#x7532;&#x5DF2;&#x8DB3;&#xFF0C;&#x5F53;&#x5956;&#x7387;&#x4E09;&#x519B;&#xFF0C;&#x5317;&#x5B9A;&#x4E2D;&#x539F;&#xFF0C;&#x5EB6;&#x7AED;&#x9A7D;&#x949D;&#xFF0C;&#x6518;&#x9664;&#x5978;&#x51F6;&#xFF0C;&#x5174;&#x590D;&#x6C49;&#x5BA4;&#xFF0C;&#x8FD8;&#x4E8E;&#x65E7;&#x90FD;&#x3002;&#x6B64;&#x81E3;&#x6240;&#x4EE5;&#x62A5;&#x5148;&#x5E1D;&#x800C;&#x5FE0;&#x965B;&#x4E0B;&#x4E4B;&#x804C;&#x5206;&#x4E5F;&#x3002;&#x81F3;&#x4E8E;&#x659F;&#x914C;&#x635F;&#x76CA;&#xFF0C;&#x8FDB;&#x5C3D;&#x5FE0;&#x8A00;&#xFF0C;&#x5219;&#x6538;&#x4E4B;&#x3001;&#x794E;&#x3001;&#x5141;&#x4E4B;&#x4EFB;&#x4E5F;&#x3002;
+5.&#x4EB2;&#x8D24;&#x81E3;&#xFF0C;&#x8FDC;&#x5C0F;&#x4EBA;&#xFF0C;&#x6B64;&#x5148;&#x6C49;&#x6240;&#x4EE5;&#x5174;&#x9686;&#x4E5F;&#xFF1B;&#x4EB2;&#x5C0F;&#x4EBA;&#xFF0C;&#x8FDC;&#x8D24;&#x81E3;&#xFF0C;&#x6B64;&#x540E;&#x6C49;&#x6240;&#x4EE5;&#x503E;&#x9893;&#x4E5F;&#x3002;&#x5148;&#x5E1D;&#x5728;&#x65F6;&#xFF0C;&#x6BCF;&#x4E0E;&#x81E3;&#x8BBA;&#x6B64;&#x4E8B;&#xFF0C;&#x672A;&#x5C1D;&#x4E0D;&#x53F9;&#x606F;&#x75DB;&#x6068;&#x4E8E;&#x6853;&#x3001;&#x7075;&#x4E5F;&#x3002;&#x4F8D;&#x4E2D;&#x3001;&#x5C1A;&#x4E66;&#x3001;&#x957F;&#x53F2;&#x3001;&#x53C2;&#x519B;&#xFF0C;&#x6B64;&#x6089;&#x8D1E;&#x826F;&#x6B7B;&#x8282;&#x4E4B;&#x81E3;&#xFF0C;&#x613F;&#x965B;&#x4E0B;&#x4EB2;&#x4E4B;&#x4FE1;&#x4E4B;&#xFF0C;&#x5219;&#x6C49;&#x5BA4;&#x4E4B;&#x9686;&#xFF0C;&#x53EF;&#x8BA1;&#x65E5;&#x800C;&#x5F85;&#x4E5F;&#x3002;
+</code></pre><h3 id="&#x6848;&#x4F8B;&#x5206;&#x6790;">&#x6848;&#x4F8B;&#x5206;&#x6790;</h3>
+<ol>
+<li>&#x9010;&#x884C;&#x8BFB;&#x53D6;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x89E3;&#x6790;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x5230;&#x96C6;&#x5408;&#x4E2D;&#x3002;</li>
+<li>&#x904D;&#x5386;&#x96C6;&#x5408;&#xFF0C;&#x6309;&#x987A;&#x5E8F;&#xFF0C;&#x5199;&#x51FA;&#x6587;&#x672C;&#x4FE1;&#x606F;</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextSort</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+BufferedReader fr = <span class="hljs-keyword">null</span>;
+        BufferedWriter fw = <span class="hljs-keyword">null</span>;
+        HashMap&lt;String,String &gt; map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        <span class="hljs-keyword">try</span> {
+            fr = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;b.txt&quot;</span>));
+            fw = <span class="hljs-keyword">new</span> BufferedWriter(<span class="hljs-keyword">new</span> FileWriter(<span class="hljs-string">&quot;result.txt&quot;</span>));
+
+
+            String line = <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">while</span> ((line = fr.readLine()) != <span class="hljs-keyword">null</span>){
+                String[] split = line.split(<span class="hljs-string">&quot;\\.&quot;</span>);
+                System.out.println(split[<span class="hljs-number">1</span>]);
+                map.put(split[<span class="hljs-number">0</span>],split[<span class="hljs-number">1</span>]);
+            }
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (fr != <span class="hljs-keyword">null</span>){
+                <span class="hljs-keyword">try</span> {
+                    fr.close();
+                } <span class="hljs-keyword">catch</span> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; map.size(); i++){
+            String key = String.valueOf(i);
+            String value = map.get(key);
+            fw.write(key + <span class="hljs-string">&quot;.&quot;</span> + value);
+            fw.newLine();
+        }
+        fw.close();
+    }
+}
+</code></pre>
+<h1 id="&#x8F6C;&#x6362;&#x6D41;">&#x8F6C;&#x6362;&#x6D41;</h1>
+<h2 id="&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x548C;&#x5B57;&#x7B26;&#x96C6;">&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x548C;&#x5B57;&#x7B26;&#x96C6;</h2>
+<h3 id="&#x5B57;&#x7B26;&#x7F16;&#x7801;">&#x5B57;&#x7B26;&#x7F16;&#x7801;</h3>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x50A8;&#x5B58;&#x7684;&#x4FE1;&#x606F;&#x90FD;&#x662F;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x8868;&#x793A;&#x7684;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x770B;&#x5230;&#x7684;&#x6570;&#x5B57;&#x3001;&#x82F1;&#x6587;&#x3001;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x3001;&#x6C49;&#x5B57;&#x7B49;&#x5B57;&#x7B26;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x8F6C;&#x6362;&#x4E4B;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x6309;&#x7167;&#x67D0;&#x79CD;&#x89C4;&#x5219;&#xFF0C;&#x5C06;&#x5B57;&#x7B26;&#x5B58;&#x50A8;&#x5230;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#xFF0C;&#x79F0;&#x4E3A;<strong>&#x7F16;&#x7801;</strong> &#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x5C06;&#x5B58;&#x50A8;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x6309;&#x7167;&#x67D0;&#x79CD;&#x89C4;&#x5219;&#x89E3;&#x6790;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x79F0;&#x4E3A;<strong>&#x89E3;&#x7801;</strong> &#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6309;&#x7167;A&#x89C4;&#x5219;&#x5B58;&#x50A8;&#xFF0C;&#x540C;&#x6837;&#x6309;&#x7167;A&#x89C4;&#x5219;&#x89E3;&#x6790;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x80FD;&#x663E;&#x793A;&#x6B63;&#x786E;&#x7684;&#x6587;&#x672C;&#x7B26;&#x53F7;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x6309;&#x7167;A&#x89C4;&#x5219;&#x5B58;&#x50A8;&#xFF0C;&#x518D;&#x6309;&#x7167;B&#x89C4;&#x5219;&#x89E3;&#x6790;&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x4E71;&#x7801;&#x73B0;&#x8C61;&#x3002;</p>
+<p>&#x7F16;&#x7801;:&#x5B57;&#x7B26;(&#x80FD;&#x770B;&#x61C2;&#x7684;)--&#x5B57;&#x8282;(&#x770B;&#x4E0D;&#x61C2;&#x7684;)</p>
+<p>&#x89E3;&#x7801;:&#x5B57;&#x8282;(&#x770B;&#x4E0D;&#x61C2;&#x7684;)--&gt;&#x5B57;&#x7B26;(&#x80FD;&#x770B;&#x61C2;&#x7684;)</p>
+<ul>
+<li><p><strong>&#x5B57;&#x7B26;&#x7F16;&#x7801;<code>Character Encoding</code></strong> : &#x5C31;&#x662F;&#x4E00;&#x5957;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x7684;&#x5B57;&#x7B26;&#x4E0E;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x5BF9;&#x5E94;&#x89C4;&#x5219;&#x3002;</p>
+<p>&#x7F16;&#x7801;&#x8868;:&#x751F;&#x6D3B;&#x4E2D;&#x6587;&#x5B57;&#x548C;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x4E8C;&#x8FDB;&#x5236;&#x7684;&#x5BF9;&#x5E94;&#x89C4;&#x5219;</p>
+</li>
+</ul>
+<h3 id="&#x5B57;&#x7B26;&#x96C6;">&#x5B57;&#x7B26;&#x96C6;</h3>
+<ul>
+<li><strong>&#x5B57;&#x7B26;&#x96C6; <code>Charset</code></strong>&#xFF1A;&#x4E5F;&#x53EB;&#x7F16;&#x7801;&#x8868;&#x3002;&#x662F;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5305;&#x62EC;&#x5404;&#x56FD;&#x5BB6;&#x6587;&#x5B57;&#x3001;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x3001;&#x56FE;&#x5F62;&#x7B26;&#x53F7;&#x3001;&#x6570;&#x5B57;&#x7B49;&#x3002;</li>
+</ul>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x8981;&#x51C6;&#x786E;&#x7684;&#x5B58;&#x50A8;&#x548C;&#x8BC6;&#x522B;&#x5404;&#x79CD;&#x5B57;&#x7B26;&#x96C6;&#x7B26;&#x53F7;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x4E00;&#x5957;&#x5B57;&#x7B26;&#x96C6;&#x5FC5;&#x7136;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x5957;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x3002;&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x96C6;&#x6709;ASCII&#x5B57;&#x7B26;&#x96C6;&#x3001;GBK&#x5B57;&#x7B26;&#x96C6;&#x3001;Unicode&#x5B57;&#x7B26;&#x96C6;&#x7B49;&#x3002;</p>
+<p><img src="https://poangspic.oss-cn-beijing.aliyuncs.com/img/image-20220312100146661.png" alt="image-20220312100146661"></p>
+<p>&#x53EF;&#x89C1;&#xFF0C;&#x5F53;&#x6307;&#x5B9A;&#x4E86;<strong>&#x7F16;&#x7801;</strong>&#xFF0C;&#x5B83;&#x6240;&#x5BF9;&#x5E94;&#x7684;<strong>&#x5B57;&#x7B26;&#x96C6;</strong>&#x81EA;&#x7136;&#x5C31;&#x6307;&#x5B9A;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;<strong>&#x7F16;&#x7801;</strong>&#x624D;&#x662F;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x8981;&#x5173;&#x5FC3;&#x7684;&#x3002;</p>
+<ul>
+<li><strong>ASCII&#x5B57;&#x7B26;&#x96C6;</strong> &#xFF1A;<ul>
+<li>ASCII&#xFF08;American Standard Code for Information Interchange&#xFF0C;&#x7F8E;&#x56FD;&#x4FE1;&#x606F;&#x4EA4;&#x6362;&#x6807;&#x51C6;&#x4EE3;&#x7801;&#xFF09;&#x662F;&#x57FA;&#x4E8E;&#x62C9;&#x4E01;&#x5B57;&#x6BCD;&#x7684;&#x4E00;&#x5957;&#x7535;&#x8111;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x73B0;&#x4EE3;&#x82F1;&#x8BED;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#xFF08;&#x56DE;&#x8F66;&#x952E;&#x3001;&#x9000;&#x683C;&#x3001;&#x6362;&#x884C;&#x952E;&#x7B49;&#xFF09;&#x548C;&#x53EF;&#x663E;&#x793A;&#x5B57;&#x7B26;&#xFF08;&#x82F1;&#x6587;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x3001;&#x963F;&#x62C9;&#x4F2F;&#x6570;&#x5B57;&#x548C;&#x897F;&#x6587;&#x7B26;&#x53F7;&#xFF09;&#x3002;</li>
+<li>&#x57FA;&#x672C;&#x7684;ASCII&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x4F7F;&#x7528;7&#x4F4D;&#xFF08;bits&#xFF09;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5171;128&#x5B57;&#x7B26;&#x3002;ASCII&#x7684;&#x6269;&#x5C55;&#x5B57;&#x7B26;&#x96C6;&#x4F7F;&#x7528;8&#x4F4D;&#xFF08;bits&#xFF09;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5171;256&#x5B57;&#x7B26;&#xFF0C;&#x65B9;&#x4FBF;&#x652F;&#x6301;&#x6B27;&#x6D32;&#x5E38;&#x7528;&#x5B57;&#x7B26;&#x3002;</li>
+</ul>
+</li>
+<li><strong>ISO-8859-1&#x5B57;&#x7B26;&#x96C6;</strong>&#xFF1A;<ul>
+<li>&#x62C9;&#x4E01;&#x7801;&#x8868;&#xFF0C;&#x522B;&#x540D;Latin-1&#xFF0C;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x6B27;&#x6D32;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x5305;&#x62EC;&#x8377;&#x5170;&#x3001;&#x4E39;&#x9EA6;&#x3001;&#x5FB7;&#x8BED;&#x3001;&#x610F;&#x5927;&#x5229;&#x8BED;&#x3001;&#x897F;&#x73ED;&#x7259;&#x8BED;&#x7B49;&#x3002;</li>
+<li>ISO-8859-1&#x4F7F;&#x7528;&#x5355;&#x5B57;&#x8282;&#x7F16;&#x7801;&#xFF0C;&#x517C;&#x5BB9;ASCII&#x7F16;&#x7801;&#x3002;</li>
+</ul>
+</li>
+<li><strong>GBxxx&#x5B57;&#x7B26;&#x96C6;</strong>&#xFF1A;<ul>
+<li>GB&#x5C31;&#x662F;&#x56FD;&#x6807;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x663E;&#x793A;&#x4E2D;&#x6587;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x5957;&#x5B57;&#x7B26;&#x96C6;&#x3002;</li>
+<li><strong>GB2312</strong>&#xFF1A;&#x7B80;&#x4F53;&#x4E2D;&#x6587;&#x7801;&#x8868;&#x3002;&#x4E00;&#x4E2A;&#x5C0F;&#x4E8E;127&#x7684;&#x5B57;&#x7B26;&#x7684;&#x610F;&#x4E49;&#x4E0E;&#x539F;&#x6765;&#x76F8;&#x540C;&#x3002;&#x4F46;&#x4E24;&#x4E2A;&#x5927;&#x4E8E;127&#x7684;&#x5B57;&#x7B26;&#x8FDE;&#x5728;&#x4E00;&#x8D77;&#x65F6;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6C49;&#x5B57;&#xFF0C;&#x8FD9;&#x6837;&#x5927;&#x7EA6;&#x53EF;&#x4EE5;&#x7EC4;&#x5408;&#x4E86;&#x5305;&#x542B;7000&#x591A;&#x4E2A;&#x7B80;&#x4F53;&#x6C49;&#x5B57;&#xFF0C;&#x6B64;&#x5916;&#x6570;&#x5B66;&#x7B26;&#x53F7;&#x3001;&#x7F57;&#x9A6C;&#x5E0C;&#x814A;&#x7684;&#x5B57;&#x6BCD;&#x3001;&#x65E5;&#x6587;&#x7684;&#x5047;&#x540D;&#x4EEC;&#x90FD;&#x7F16;&#x8FDB;&#x53BB;&#x4E86;&#xFF0C;&#x8FDE;&#x5728;ASCII&#x91CC;&#x672C;&#x6765;&#x5C31;&#x6709;&#x7684;&#x6570;&#x5B57;&#x3001;&#x6807;&#x70B9;&#x3001;&#x5B57;&#x6BCD;&#x90FD;&#x7EDF;&#x7EDF;&#x91CD;&#x65B0;&#x7F16;&#x4E86;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#x957F;&#x7684;&#x7F16;&#x7801;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x5E38;&#x8BF4;&#x7684;&quot;&#x5168;&#x89D2;&quot;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x539F;&#x6765;&#x5728;127&#x53F7;&#x4EE5;&#x4E0B;&#x7684;&#x90A3;&#x4E9B;&#x5C31;&#x53EB;&quot;&#x534A;&#x89D2;&quot;&#x5B57;&#x7B26;&#x4E86;&#x3002;</li>
+<li><strong>GBK</strong>&#xFF1A;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4E2D;&#x6587;&#x7801;&#x8868;&#x3002;&#x662F;&#x5728;GB2312&#x6807;&#x51C6;&#x57FA;&#x7840;&#x4E0A;&#x7684;&#x6269;&#x5C55;&#x89C4;&#x8303;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x53CC;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x65B9;&#x6848;&#xFF0C;&#x5171;&#x6536;&#x5F55;&#x4E86;21003&#x4E2A;&#x6C49;&#x5B57;&#xFF0C;&#x5B8C;&#x5168;&#x517C;&#x5BB9;GB2312&#x6807;&#x51C6;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;&#x7E41;&#x4F53;&#x6C49;&#x5B57;&#x4EE5;&#x53CA;&#x65E5;&#x97E9;&#x6C49;&#x5B57;&#x7B49;&#x3002;</li>
+<li><strong>GB18030</strong>&#xFF1A;&#x6700;&#x65B0;&#x7684;&#x4E2D;&#x6587;&#x7801;&#x8868;&#x3002;&#x6536;&#x5F55;&#x6C49;&#x5B57;70244&#x4E2A;&#xFF0C;&#x91C7;&#x7528;&#x591A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x53EF;&#x4EE5;&#x7531;1&#x4E2A;&#x3001;2&#x4E2A;&#x6216;4&#x4E2A;&#x5B57;&#x8282;&#x7EC4;&#x6210;&#x3002;&#x652F;&#x6301;&#x4E2D;&#x56FD;&#x56FD;&#x5185;&#x5C11;&#x6570;&#x6C11;&#x65CF;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;&#x7E41;&#x4F53;&#x6C49;&#x5B57;&#x4EE5;&#x53CA;&#x65E5;&#x97E9;&#x6C49;&#x5B57;&#x7B49;&#x3002;</li>
+</ul>
+</li>
+<li><strong>Unicode&#x5B57;&#x7B26;&#x96C6;</strong> &#xFF1A;<ul>
+<li>Unicode&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x4E3A;&#x8868;&#x8FBE;&#x4EFB;&#x610F;&#x8BED;&#x8A00;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#x800C;&#x8BBE;&#x8BA1;&#xFF0C;&#x662F;&#x4E1A;&#x754C;&#x7684;&#x4E00;&#x79CD;&#x6807;&#x51C6;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x7EDF;&#x4E00;&#x7801;&#x3001;&#x6807;&#x51C6;&#x4E07;&#x56FD;&#x7801;&#x3002;</li>
+<li>&#x5B83;&#x6700;&#x591A;&#x4F7F;&#x7528;4&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x6570;&#x5B57;&#x6765;&#x8868;&#x8FBE;&#x6BCF;&#x4E2A;&#x5B57;&#x6BCD;&#x3001;&#x7B26;&#x53F7;&#xFF0C;&#x6216;&#x8005;&#x6587;&#x5B57;&#x3002;&#x6709;&#x4E09;&#x79CD;&#x7F16;&#x7801;&#x65B9;&#x6848;&#xFF0C;UTF-8&#x3001;UTF-16&#x548C;UTF-32&#x3002;&#x6700;&#x4E3A;&#x5E38;&#x7528;&#x7684;UTF-8&#x7F16;&#x7801;&#x3002;</li>
+<li>UTF-8&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;Unicode&#x6807;&#x51C6;&#x4E2D;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF0C;&#x5B83;&#x662F;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3001;&#x7F51;&#x9875;&#x53CA;&#x5176;&#x4ED6;&#x5B58;&#x50A8;&#x6216;&#x4F20;&#x9001;&#x6587;&#x5B57;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x4F18;&#x5148;&#x91C7;&#x7528;&#x7684;&#x7F16;&#x7801;&#x3002;&#x4E92;&#x8054;&#x7F51;&#x5DE5;&#x7A0B;&#x5DE5;&#x4F5C;&#x5C0F;&#x7EC4;&#xFF08;IETF&#xFF09;&#x8981;&#x6C42;&#x6240;&#x6709;&#x4E92;&#x8054;&#x7F51;&#x534F;&#x8BAE;&#x90FD;&#x5FC5;&#x987B;&#x652F;&#x6301;UTF-8&#x7F16;&#x7801;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x53D1;Web&#x5E94;&#x7528;&#xFF0C;&#x4E5F;&#x8981;&#x4F7F;&#x7528;UTF-8&#x7F16;&#x7801;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x4E00;&#x81F3;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;&#x7F16;&#x7801;&#x89C4;&#x5219;&#xFF1A;<ol>
+<li>128&#x4E2A;US-ASCII&#x5B57;&#x7B26;&#xFF0C;&#x53EA;&#x9700;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x3002;</li>
+<li>&#x62C9;&#x4E01;&#x6587;&#x7B49;&#x5B57;&#x7B26;&#xFF0C;&#x9700;&#x8981;&#x4E8C;&#x4E2A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x3002; </li>
+<li>&#x5927;&#x90E8;&#x5206;&#x5E38;&#x7528;&#x5B57;&#xFF08;&#x542B;&#x4E2D;&#x6587;&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x4E09;&#x4E2A;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x3002;</li>
+<li>&#x5176;&#x4ED6;&#x6781;&#x5C11;&#x4F7F;&#x7528;&#x7684;Unicode&#x8F85;&#x52A9;&#x5B57;&#x7B26;&#xFF0C;&#x4F7F;&#x7528;&#x56DB;&#x5B57;&#x8282;&#x7F16;&#x7801;&#x3002;</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x7F16;&#x7801;&#x5F15;&#x51FA;&#x7684;&#x95EE;&#x9898;">&#x7F16;&#x7801;&#x5F15;&#x51FA;&#x7684;&#x95EE;&#x9898;</h2>
+<p>&#x5728;IDEA&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;<code>FileReader</code> &#x8BFB;&#x53D6;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x7531;&#x4E8E;IDEA&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x90FD;&#x662F;&#x9ED8;&#x8BA4;&#x7684;<code>UTF-8</code>&#x7F16;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x8BFB;&#x53D6;Windows&#x7CFB;&#x7EDF;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;Windows&#x7CFB;&#x7EDF;&#x7684;&#x9ED8;&#x8BA4;&#x662F;GBK&#x7F16;&#x7801;&#xFF0C;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x4E71;&#x7801;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReaderDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        FileReader fileReader = <span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;E:\\File_GBK.txt&quot;</span>);
+        <span class="hljs-keyword">int</span> read;
+        <span class="hljs-keyword">while</span> ((read = fileReader.read()) != -<span class="hljs-number">1</span>) {
+            System.out.print((<span class="hljs-keyword">char</span>)read);
+        }
+        fileReader.close();
+    }
+}
+&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;
+&#xFFFD;&#xFFFD;&#xFFFD;
+</code></pre>
+<h2 id="inputstreamreader&#x7C7B;">InputStreamReader&#x7C7B;</h2>
+<p>&#x8F6C;&#x6362;&#x6D41;<code>java.io.InputStreamReader</code>&#xFF0C;&#x662F;Reader&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x662F;&#x4ECE;&#x5B57;&#x8282;&#x6D41;&#x5230;&#x5B57;&#x7B26;&#x6D41;&#x7684;&#x6865;&#x6881;&#x3002;&#x5B83;&#x8BFB;&#x53D6;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x5C06;&#x5176;&#x89E3;&#x7801;&#x4E3A;&#x5B57;&#x7B26;&#x3002;&#x5B83;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x53EF;&#x4EE5;&#x7531;&#x540D;&#x79F0;&#x6307;&#x5B9A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x5E73;&#x53F0;&#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;&#x3002; </p>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>InputStreamReader(InputStream in)</code>: &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x6D41;&#x3002; </li>
+<li><code>InputStreamReader(InputStream in, String charsetName)</code>: &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x6D41;&#x3002;</li>
+</ul>
+<pre><code class="lang-java">InputStreamReader isr = <span class="hljs-keyword">new</span> InputStreamReader(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;in.txt&quot;</span>));
+InputStreamReader isr2 = <span class="hljs-keyword">new</span> InputStreamReader(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;in.txt&quot;</span>) , <span class="hljs-string">&quot;GBK&quot;</span>);
+</code></pre>
+<h3 id="&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8BFB;&#x53D6;">&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x8BFB;&#x53D6;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReaderDemo2</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+          <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;,&#x6587;&#x4EF6;&#x4E3A;gbk&#x7F16;&#x7801;</span>
+        String FileName = <span class="hljs-string">&quot;E:\\file_gbk.txt&quot;</span>;
+          <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;,&#x9ED8;&#x8BA4;UTF8&#x7F16;&#x7801;</span>
+        InputStreamReader isr = <span class="hljs-keyword">new</span> InputStreamReader(<span class="hljs-keyword">new</span> FileInputStream(FileName));
+          <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;,&#x6307;&#x5B9A;GBK&#x7F16;&#x7801;</span>
+        InputStreamReader isr2 = <span class="hljs-keyword">new</span> InputStreamReader(<span class="hljs-keyword">new</span> FileInputStream(FileName) , <span class="hljs-string">&quot;GBK&quot;</span>);
+        <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x53D8;&#x91CF;,&#x4FDD;&#x5B58;&#x5B57;&#x7B26;</span>
+        <span class="hljs-keyword">int</span> read;
+          <span class="hljs-comment">// &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x5B57;&#x7B26;&#x6D41;&#x8BFB;&#x53D6;,&#x4E71;&#x7801;</span>
+        <span class="hljs-keyword">while</span> ((read = isr.read()) != -<span class="hljs-number">1</span>) {
+            System.out.print((<span class="hljs-keyword">char</span>)read); <span class="hljs-comment">// &#xFFFD;&#xFFFD;&#x4BA;&#xFFFD;</span>
+        }
+        isr.close();
+
+          <span class="hljs-comment">// &#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x5B57;&#x7B26;&#x6D41;&#x8BFB;&#x53D6;,&#x6B63;&#x5E38;&#x89E3;&#x6790;</span>
+        <span class="hljs-keyword">while</span> ((read = isr2.read()) != -<span class="hljs-number">1</span>) {
+            System.out.print((<span class="hljs-keyword">char</span>)read);<span class="hljs-comment">// &#x5927;&#x5BB6;&#x597D;</span>
+        }
+        isr2.close();
+    }
+}
+</code></pre>
+<h2 id="outputstreamwriter&#x7C7B;">OutputStreamWriter&#x7C7B;</h2>
+<p>&#x8F6C;&#x6362;&#x6D41;<code>java.io.OutputStreamWriter</code> &#xFF0C;&#x662F;Writer&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x662F;&#x4ECE;&#x5B57;&#x7B26;&#x6D41;&#x5230;&#x5B57;&#x8282;&#x6D41;&#x7684;&#x6865;&#x6881;&#x3002;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x5C06;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x4E3A;&#x5B57;&#x8282;&#x3002;&#x5B83;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x53EF;&#x4EE5;&#x7531;&#x540D;&#x79F0;&#x6307;&#x5B9A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x5E73;&#x53F0;&#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;&#x3002; </p>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>OutputStreamWriter(OutputStream in)</code>: &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x6D41;&#x3002; </li>
+<li><code>OutputStreamWriter(OutputStream in, String charsetName)</code>: &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x6D41;&#x3002;</li>
+</ul>
+<pre><code class="lang-java">OutputStreamWriter isr = <span class="hljs-keyword">new</span> OutputStreamWriter(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;out.txt&quot;</span>));
+OutputStreamWriter isr2 = <span class="hljs-keyword">new</span> OutputStreamWriter(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;out.txt&quot;</span>) , <span class="hljs-string">&quot;GBK&quot;</span>);
+</code></pre>
+<h3 id="&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x5199;&#x51FA;">&#x6307;&#x5B9A;&#x7F16;&#x7801;&#x5199;&#x51FA;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OutputDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+          <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
+        String FileName = <span class="hljs-string">&quot;E:\\out.txt&quot;</span>;
+          <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;,&#x9ED8;&#x8BA4;UTF8&#x7F16;&#x7801;</span>
+        OutputStreamWriter osw = <span class="hljs-keyword">new</span> OutputStreamWriter(<span class="hljs-keyword">new</span> FileOutputStream(FileName));
+        <span class="hljs-comment">// &#x5199;&#x51FA;&#x6570;&#x636E;</span>
+          osw.write(<span class="hljs-string">&quot;&#x4F60;&#x597D;&quot;</span>); <span class="hljs-comment">// &#x4FDD;&#x5B58;&#x4E3A;6&#x4E2A;&#x5B57;&#x8282;</span>
+        osw.close();
+
+        <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
+        String FileName2 = <span class="hljs-string">&quot;E:\\out2.txt&quot;</span>;
+         <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;,&#x6307;&#x5B9A;GBK&#x7F16;&#x7801;</span>
+        OutputStreamWriter osw2 = <span class="hljs-keyword">new</span> OutputStreamWriter(<span class="hljs-keyword">new</span> FileOutputStream(FileName2),<span class="hljs-string">&quot;GBK&quot;</span>);
+        <span class="hljs-comment">// &#x5199;&#x51FA;&#x6570;&#x636E;</span>
+          osw2.write(<span class="hljs-string">&quot;&#x4F60;&#x597D;&quot;</span>);<span class="hljs-comment">// &#x4FDD;&#x5B58;&#x4E3A;4&#x4E2A;&#x5B57;&#x8282;</span>
+        osw2.close();
+    }
+}
+</code></pre>
+<h3 id="&#x8F6C;&#x6362;&#x6D41;&#x7406;&#x89E3;&#x56FE;&#x89E3;">&#x8F6C;&#x6362;&#x6D41;&#x7406;&#x89E3;&#x56FE;&#x89E3;</h3>
+<p><img src="https://poangspic.oss-cn-beijing.aliyuncs.com/img/image-20220312100619446.png" alt="image-20220312100619446"></p>
+<h1 id="&#x5E8F;&#x5217;&#x5316;">&#x5E8F;&#x5217;&#x5316;</h1>
+<p>Java &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;<strong>&#x5E8F;&#x5217;&#x5316;</strong>&#x7684;&#x673A;&#x5236;&#x3002;&#x7528;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x5305;&#x542B;&#x8BE5;<code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;</code>&#x3001;<code>&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;</code>&#x548C;<code>&#x5BF9;&#x8C61;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x5C5E;&#x6027;</code>&#x7B49;&#x4FE1;&#x606F;&#x3002;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x5199;&#x51FA;&#x5230;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6587;&#x4EF6;&#x4E2D;<strong>&#x6301;&#x4E45;&#x4FDD;&#x5B58;</strong>&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4FE1;&#x606F;&#x3002; </p>
+<p>&#x53CD;&#x4E4B;&#xFF0C;&#x8BE5;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x8FD8;&#x53EF;&#x4EE5;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x56DE;&#x6765;&#xFF0C;&#x91CD;&#x6784;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;<strong>&#x53CD;&#x5E8F;&#x5217;&#x5316;</strong>&#x3002;<code>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;</code>&#x3001;<code>&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;</code>&#x548C;<code>&#x5BF9;&#x8C61;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;</code>&#x4FE1;&#x606F;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x3002;&#x770B;&#x56FE;&#x7406;&#x89E3;&#x5E8F;&#x5217;&#x5316;&#xFF1A;</p>
+<p><img src="https://poangspic.oss-cn-beijing.aliyuncs.com/img/image-20220312100700725.png" alt="image-20220312100700725"></p>
+<h2 id="objectoutputstream&#x7C7B;">ObjectOutputStream&#x7C7B;</h2>
+<p><code>java.io.ObjectOutputStream</code> &#x7C7B;&#xFF0C;&#x5C06;Java&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5199;&#x51FA;&#x5230;&#x6587;&#x4EF6;,&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#x7684;&#x6301;&#x4E45;&#x5B58;&#x50A8;&#x3002;</p>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>public ObjectOutputStream(OutputStream out)</code>&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;OutputStream&#x7684;ObjectOutputStream&#x3002;</li>
+</ul>
+<pre><code class="lang-java">FileOutputStream fileOut = <span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;employee.txt&quot;</span>);
+ObjectOutputStream out = <span class="hljs-keyword">new</span> ObjectOutputStream(fileOut);
+</code></pre>
+<h3 id="&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;">&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;</h3>
+<ol>
+<li><p>&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x8981;&#x60F3;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;:</p>
+</li>
+<li><p>&#x8BE5;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;<code>java.io.Serializable</code> &#x63A5;&#x53E3;&#xFF0C;<code>Serializable</code> &#x662F;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x63A5;&#x53E3;&#xFF0C;&#x4E0D;&#x5B9E;&#x73B0;&#x6B64;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x5C06;&#x4E0D;&#x4F1A;&#x4F7F;&#x4EFB;&#x4F55;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x5316;&#x6216;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;<code>NotSerializableException</code> &#x3002;</p>
+</li>
+<li>&#x8BE5;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x3002;&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x4E0D;&#x9700;&#x8981;&#x53EF;&#x5E8F;&#x5217;&#x5316;&#x7684;&#xFF0C;&#x5219;&#x8BE5;&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x6CE8;&#x660E;&#x662F;&#x77AC;&#x6001;&#x7684;&#xFF0C;&#x4F7F;&#x7528;<code>transient</code> &#x5173;&#x952E;&#x5B57;&#x4FEE;&#x9970;&#x3002;</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span> </span>{
+    <span class="hljs-keyword">public</span> String name;
+    <span class="hljs-keyword">public</span> String address;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">transient</span> <span class="hljs-keyword">int</span> age; <span class="hljs-comment">// transient&#x77AC;&#x6001;&#x4FEE;&#x9970;&#x6210;&#x5458;,&#x4E0D;&#x4F1A;&#x88AB;&#x5E8F;&#x5217;&#x5316;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addressCheck</span><span class="hljs-params">()</span> </span>{
+          System.out.println(<span class="hljs-string">&quot;Address  check : &quot;</span> + name + <span class="hljs-string">&quot; -- &quot;</span> + address);
+    }
+}
+</code></pre>
+<p>2.&#x5199;&#x51FA;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;</p>
+<ul>
+<li><code>public final void writeObject (Object obj)</code> : &#x5C06;&#x6307;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x5199;&#x51FA;&#x3002;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SerializeDemo</span></span>{
+       <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String [] args)</span>   </span>{
+        Employee e = <span class="hljs-keyword">new</span> Employee();
+        e.name = <span class="hljs-string">&quot;zhangsan&quot;</span>;
+        e.address = <span class="hljs-string">&quot;beiqinglu&quot;</span>;
+        e.age = <span class="hljs-number">20</span>; 
+        <span class="hljs-keyword">try</span> {
+              <span class="hljs-comment">// &#x521B;&#x5EFA;&#x5E8F;&#x5217;&#x5316;&#x6D41;&#x5BF9;&#x8C61;</span>
+          ObjectOutputStream out = <span class="hljs-keyword">new</span> ObjectOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;employee.txt&quot;</span>));
+            <span class="hljs-comment">// &#x5199;&#x51FA;&#x5BF9;&#x8C61;</span>
+            out.writeObject(e);
+            <span class="hljs-comment">// &#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
+            out.close();
+            fileOut.close();
+            System.out.println(<span class="hljs-string">&quot;Serialized data is saved&quot;</span>); <span class="hljs-comment">// &#x59D3;&#x540D;&#xFF0C;&#x5730;&#x5740;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x5E74;&#x9F84;&#x6CA1;&#x6709;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x3002;</span>
+        } <span class="hljs-keyword">catch</span>(IOException i)   {
+            i.printStackTrace();
+        }
+       }
+}
+&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;
+Serialized data is saved
+</code></pre>
+<h2 id="objectinputstream&#x7C7B;">ObjectInputStream&#x7C7B;</h2>
+<p>ObjectInputStream&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6D41;&#xFF0C;&#x5C06;&#x4E4B;&#x524D;&#x4F7F;&#x7528;ObjectOutputStream&#x5E8F;&#x5217;&#x5316;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6062;&#x590D;&#x4E3A;&#x5BF9;&#x8C61;&#x3002; </p>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>public ObjectInputStream(InputStream in)</code>&#xFF1A; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;InputStream&#x7684;ObjectInputStream&#x3002;</li>
+</ul>
+<h3 id="&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;1">&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;1</h3>
+<p>&#x5982;&#x679C;&#x80FD;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;class&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x8C03;&#x7528;<code>ObjectInputStream</code>&#x8BFB;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><code>public final Object readObject ()</code> : &#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeserializeDemo</span> </span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String [] args)</span>   </span>{
+        Employee e = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {        
+             <span class="hljs-comment">// &#x521B;&#x5EFA;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6D41;</span>
+             FileInputStream fileIn = <span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;employee.txt&quot;</span>);
+             ObjectInputStream in = <span class="hljs-keyword">new</span> ObjectInputStream(fileIn);
+             <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+             e = (Employee) in.readObject();
+             <span class="hljs-comment">// &#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
+             in.close();
+             fileIn.close();
+        }<span class="hljs-keyword">catch</span>(IOException i) {
+             <span class="hljs-comment">// &#x6355;&#x83B7;&#x5176;&#x4ED6;&#x5F02;&#x5E38;</span>
+             i.printStackTrace();
+             <span class="hljs-keyword">return</span>;
+        }<span class="hljs-keyword">catch</span>(ClassNotFoundException c)  {
+            <span class="hljs-comment">// &#x6355;&#x83B7;&#x7C7B;&#x627E;&#x4E0D;&#x5230;&#x5F02;&#x5E38;</span>
+             System.out.println(<span class="hljs-string">&quot;Employee class not found&quot;</span>);
+             c.printStackTrace();
+             <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-comment">// &#x65E0;&#x5F02;&#x5E38;,&#x76F4;&#x63A5;&#x6253;&#x5370;&#x8F93;&#x51FA;</span>
+        System.out.println(<span class="hljs-string">&quot;Name: &quot;</span> + e.name);    <span class="hljs-comment">// zhangsan</span>
+        System.out.println(<span class="hljs-string">&quot;Address: &quot;</span> + e.address); <span class="hljs-comment">// beiqinglu</span>
+        System.out.println(<span class="hljs-string">&quot;age: &quot;</span> + e.age); <span class="hljs-comment">// 0</span>
+    }
+}
+</code></pre>
+<p><strong>&#x5BF9;&#x4E8E;JVM&#x53EF;&#x4EE5;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x80FD;&#x591F;&#x627E;&#x5230;class&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x3002;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x8BE5;&#x7C7B;&#x7684;class&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x629B;&#x51FA;&#x4E00;&#x4E2A; <code>ClassNotFoundException</code> &#x5F02;&#x5E38;&#x3002;</strong>  </p>
+<h3 id="&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;2"><strong>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;2</strong></h3>
+<p><strong>&#x53E6;&#x5916;&#xFF0C;&#x5F53;JVM&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x80FD;&#x627E;&#x5230;class&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;class&#x6587;&#x4EF6;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x4E4B;&#x540E;&#x53D1;&#x751F;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x90A3;&#x4E48;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x4E5F;&#x4F1A;&#x5931;&#x8D25;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;<code>InvalidClassException</code>&#x5F02;&#x5E38;&#x3002;</strong>&#x53D1;&#x751F;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x7684;&#x539F;&#x56E0;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x8BE5;&#x7C7B;&#x7684;&#x5E8F;&#x5217;&#x7248;&#x672C;&#x53F7;&#x4E0E;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x7C7B;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x7248;&#x672C;&#x53F7;&#x4E0D;&#x5339;&#x914D; </li>
+<li>&#x8BE5;&#x7C7B;&#x5305;&#x542B;&#x672A;&#x77E5;&#x6570;&#x636E;&#x7C7B;&#x578B; </li>
+<li>&#x8BE5;&#x7C7B;&#x6CA1;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x65E0;&#x53C2;&#x6570;&#x6784;&#x9020;&#x65B9;&#x6CD5; </li>
+</ul>
+<p><code>Serializable</code> &#x63A5;&#x53E3;&#x7ED9;&#x9700;&#x8981;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x7C7B;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x7248;&#x672C;&#x53F7;&#x3002;<code>serialVersionUID</code> &#x8BE5;&#x7248;&#x672C;&#x53F7;&#x7684;&#x76EE;&#x7684;&#x5728;&#x4E8E;&#x9A8C;&#x8BC1;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#x548C;&#x5BF9;&#x5E94;&#x7C7B;&#x662F;&#x5426;&#x7248;&#x672C;&#x5339;&#x914D;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span> </span>{
+     <span class="hljs-comment">// &#x52A0;&#x5165;&#x5E8F;&#x5217;&#x7248;&#x672C;&#x53F7;</span>
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = <span class="hljs-number">1L</span>;
+     <span class="hljs-keyword">public</span> String name;
+     <span class="hljs-keyword">public</span> String address;
+     <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x5C5E;&#x6027; ,&#x91CD;&#x65B0;&#x7F16;&#x8BD1;, &#x53EF;&#x4EE5;&#x53CD;&#x5E8F;&#x5217;&#x5316;,&#x8BE5;&#x5C5E;&#x6027;&#x8D4B;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;.</span>
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> eid; 
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addressCheck</span><span class="hljs-params">()</span> </span>{
+         System.out.println(<span class="hljs-string">&quot;Address  check : &quot;</span> + name + <span class="hljs-string">&quot; -- &quot;</span> + address);
+     }
+}
+</code></pre>
+<h2 id="&#x7EC3;&#x4E60;&#xFF1A;&#x5E8F;&#x5217;&#x5316;&#x96C6;&#x5408;">&#x7EC3;&#x4E60;&#xFF1A;&#x5E8F;&#x5217;&#x5316;&#x96C6;&#x5408;</h2>
+<ol>
+<li>&#x5C06;&#x5B58;&#x6709;&#x591A;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x96C6;&#x5408;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4FDD;&#x5B58;&#x5230;<code>list.txt</code>&#x6587;&#x4EF6;&#x4E2D;&#x3002;</li>
+<li>&#x53CD;&#x5E8F;&#x5217;&#x5316;<code>list.txt</code> &#xFF0C;&#x5E76;&#x904D;&#x5386;&#x96C6;&#x5408;&#xFF0C;&#x6253;&#x5370;&#x5BF9;&#x8C61;&#x4FE1;&#x606F;&#x3002;</li>
+</ol>
+<h3 id="&#x6848;&#x4F8B;&#x5206;&#x6790;">&#x6848;&#x4F8B;&#x5206;&#x6790;</h3>
+<ol>
+<li>&#x628A;&#x82E5;&#x5E72;&#x5B66;&#x751F;&#x5BF9;&#x8C61; &#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x96C6;&#x5408;&#x4E2D;&#x3002;</li>
+<li>&#x628A;&#x96C6;&#x5408;&#x5E8F;&#x5217;&#x5316;&#x3002;</li>
+<li>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8BFB;&#x53D6;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x4E00;&#x6B21;&#xFF0C;&#x8F6C;&#x6362;&#x4E3A;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x904D;&#x5386;&#x96C6;&#x5408;&#xFF0C;&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x6240;&#x6709;&#x7684;&#x5B66;&#x751F;&#x4FE1;&#x606F;</li>
+</ol>
+<h3 id="&#x6848;&#x4F8B;&#x5B9E;&#x73B0;">&#x6848;&#x4F8B;&#x5B9E;&#x73B0;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SerializableTest</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        Student student = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&quot;dharni&quot;</span>,<span class="hljs-number">22</span>);
+        Student student2 = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&quot;laowang&quot;</span>,<span class="hljs-number">32</span>);
+        Student student3 = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&quot;laoli&quot;</span>,<span class="hljs-number">12</span>);
+        ArrayList&lt;Student&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+        list.add(student);
+        list.add(student2);
+        list.add(student3);
+        <span class="hljs-comment">//serializ(list); //&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-comment">//&#x53CD;&#x5E8F;&#x5217;&#x5316;</span>
+        ObjectInputStream ois = <span class="hljs-keyword">new</span> ObjectInputStream(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;list.txt&quot;</span>));
+        ArrayList&lt;Student&gt; list1 = (ArrayList&lt;Student&gt;)ois.readObject();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; list1.size(); i++) {
+            Student s = list1.get(i);
+            System.out.println(s.getName() + <span class="hljs-string">&quot;----&quot;</span> + s.getAge() );
+
+        }
+
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">serializ</span><span class="hljs-params">(ArrayList&lt;Student&gt; arrayList)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-comment">// &#x521B;&#x5EFA; &#x5E8F;&#x5217;&#x5316;&#x6D41;</span>
+        ObjectOutputStream oos = <span class="hljs-keyword">new</span> ObjectOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;list.txt&quot;</span>));
+        <span class="hljs-comment">// &#x5199;&#x51FA;&#x5BF9;&#x8C61;</span>
+        oos.writeObject(arrayList);
+        <span class="hljs-comment">// &#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
+        oos.close();
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span></span>{
+    <span class="hljs-keyword">private</span> String name;
+    <span class="hljs-keyword">private</span>  <span class="hljs-keyword">int</span> age;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Student</span><span class="hljs-params">()</span> </span>{
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Student</span><span class="hljs-params">(String name, <span class="hljs-keyword">int</span> age)</span> </span>{
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.age = age;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setName</span><span class="hljs-params">(String name)</span> </span>{
+        <span class="hljs-keyword">this</span>.name = name;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAge</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> age;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setAge</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age)</span> </span>{
+        <span class="hljs-keyword">this</span>.age = age;
+    }
+}
+</code></pre>
+<h1 id="&#x6253;&#x5370;&#x6D41;">&#x6253;&#x5370;&#x6D41;</h1>
+<p>&#x5E73;&#x65F6;&#x6211;&#x4EEC;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x8F93;&#x51FA;&#xFF0C;&#x662F;&#x8C03;&#x7528;<code>print</code>&#x65B9;&#x6CD5;&#x548C;<code>println</code>&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x6765;&#x81EA;&#x4E8E;<code>java.io.PrintStream</code>&#x7C7B;&#xFF0C;&#x8BE5;&#x7C7B;&#x80FD;&#x591F;&#x65B9;&#x4FBF;&#x5730;&#x6253;&#x5370;&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x4FBF;&#x6377;&#x7684;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;</p>
+<h2 id="printstream&#x7C7B;">PrintStream&#x7C7B;</h2>
+<h3 id="&#x6784;&#x9020;&#x65B9;&#x6CD5;">&#x6784;&#x9020;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><code>public PrintStream(String fileName)</code>&#xFF1A; &#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6253;&#x5370;&#x6D41;&#x3002;</li>
+</ul>
+<pre><code class="lang-java">PrintStream ps = <span class="hljs-keyword">new</span> PrintStream(<span class="hljs-string">&quot;ps.txt&quot;</span>)&#xFF1B;
+</code></pre>
+<h3 id="&#x6539;&#x53D8;&#x6253;&#x5370;&#x6D41;&#x5411;">&#x6539;&#x53D8;&#x6253;&#x5370;&#x6D41;&#x5411;</h3>
+<p><code>System.out</code>&#x5C31;&#x662F;<code>PrintStream</code>&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x7684;&#x6D41;&#x5411;&#x662F;&#x7CFB;&#x7EDF;&#x89C4;&#x5B9A;&#x7684;&#xFF0C;&#x6253;&#x5370;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E0A;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x65E2;&#x7136;&#x662F;&#x6D41;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x73A9;&#x4E00;&#x4E2A;&quot;&#x5C0F;&#x628A;&#x620F;&quot;&#xFF0C;&#x6539;&#x53D8;&#x5B83;&#x7684;&#x6D41;&#x5411;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-comment">// &#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x6253;&#x5370;&#x6D41;,&#x63A7;&#x5236;&#x53F0;&#x76F4;&#x63A5;&#x8F93;&#x51FA;97</span>
+        System.out.println(<span class="hljs-number">97</span>);
+
+        <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6253;&#x5370;&#x6D41;,&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;</span>
+        PrintStream ps = <span class="hljs-keyword">new</span> PrintStream(<span class="hljs-string">&quot;ps.txt&quot;</span>);
+
+          <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x7684;&#x6253;&#x5370;&#x6D41;&#x6D41;&#x5411;,&#x8F93;&#x51FA;&#x5230;ps.txt</span>
+        System.setOut(ps);
+          <span class="hljs-comment">// &#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x6253;&#x5370;&#x6D41;,ps.txt&#x4E2D;&#x8F93;&#x51FA;97</span>
+        System.out.println(<span class="hljs-number">97</span>);
+    }
+}
+</code></pre>
+<h1 id="randomaccessfile&#x7C7B;">RandomAccessFile&#x7C7B;</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10.IO.html" class="navigation navigation-prev " aria-label="Previous page: 10.IO.md">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12泛型.html" class="navigation navigation-next " aria-label="Next page: 12泛型.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.缓冲流、转换流、序列流、打印流.md","level":"1.2.11","depth":2,"next":{"title":"12泛型.md","level":"1.2.12","depth":2,"path":"Java基础/12泛型.md","ref":"Java基础/12泛型.md","articles":[]},"previous":{"title":"10.IO.md","level":"1.2.10","depth":2,"path":"Java基础/10.IO.md","ref":"Java基础/10.IO.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Java基础/11.缓冲流、转换流、序列流、打印流.md","mtime":"2022-04-13T11:08:33.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-13T11:24:57.905Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

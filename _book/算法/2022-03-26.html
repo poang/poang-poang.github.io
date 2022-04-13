@@ -1,0 +1,695 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>24. 两两交换链表中的节点 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2022-03-28.html" />
+    
+    
+    <link rel="prev" href="2022-03-24.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Java基础/ADME.md">
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Java基础/1.面向对象.html">
+            
+                <a href="../Java基础/1.面向对象.html">
+            
+                    
+                    1.面向对象.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Java基础/2.面向对象2.html">
+            
+                <a href="../Java基础/2.面向对象2.html">
+            
+                    
+                    2.面向对象2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Java基础/3.Java常用类.html">
+            
+                <a href="../Java基础/3.Java常用类.html">
+            
+                    
+                    3.Java常用类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Java基础/4.Java集合.html">
+            
+                <a href="../Java基础/4.Java集合.html">
+            
+                    
+                    4.Java集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Java基础/5.List接口.html">
+            
+                <a href="../Java基础/5.List接口.html">
+            
+                    
+                    5.List接口.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Java基础/6.Set集合.html">
+            
+                <a href="../Java基础/6.Set集合.html">
+            
+                    
+                    6.Set集合.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Java基础/7.Map.html">
+            
+                <a href="../Java基础/7.Map.html">
+            
+                    
+                    7.Map.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Java基础/8.异常.html">
+            
+                <a href="../Java基础/8.异常.html">
+            
+                    
+                    8.异常.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Java基础/9.File类.html">
+            
+                <a href="../Java基础/9.File类.html">
+            
+                    
+                    9.File类.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Java基础/10.IO.html">
+            
+                <a href="../Java基础/10.IO.html">
+            
+                    
+                    10.IO.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Java基础/11.缓冲流、转换流、序列流、打印流.html">
+            
+                <a href="../Java基础/11.缓冲流、转换流、序列流、打印流.html">
+            
+                    
+                    11.缓冲流、转换流、序列流、打印流.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Java基础/12泛型.html">
+            
+                <a href="../Java基础/12泛型.html">
+            
+                    
+                    12泛型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Java基础/13.多线程.html">
+            
+                <a href="../Java基础/13.多线程.html">
+            
+                    
+                    13.多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Java基础/14.线程安全.html">
+            
+                <a href="../Java基础/14.线程安全.html">
+            
+                    
+                    14.线程安全.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2022-03-12.html">
+            
+                <a href="2022-03-12.html">
+            
+                    
+                    二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2022-03-13.html">
+            
+                <a href="2022-03-13.html">
+            
+                    
+                    34. 在排序数组中查找元素的第一个和最后一个位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2022-03-14.html">
+            
+                <a href="2022-03-14.html">
+            
+                    
+                    27.移除元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2022-03-15.html">
+            
+                <a href="2022-03-15.html">
+            
+                    
+                     977. 有序数组的平方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="2022-03-16.html">
+            
+                <a href="2022-03-16.html">
+            
+                    
+                    209. 长度最小的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2022-03-17.html">
+            
+                <a href="2022-03-17.html">
+            
+                    
+                    904. 水果成篮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="2022-03-18.html">
+            
+                <a href="2022-03-18.html">
+            
+                    
+                    76. 最小覆盖子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="2022-03-21.html">
+            
+                <a href="2022-03-21.html">
+            
+                    
+                    59. 螺旋矩阵 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="2022-03-22.html">
+            
+                <a href="2022-03-22.html">
+            
+                    
+                    203. 移除链表元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="2022-03-23.html">
+            
+                <a href="2022-03-23.html">
+            
+                    
+                    707. 设计链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="2022-03-24.html">
+            
+                <a href="2022-03-24.html">
+            
+                    
+                    206. 反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.12" data-path="2022-03-26.html">
+            
+                <a href="2022-03-26.html">
+            
+                    
+                    24. 两两交换链表中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="2022-03-28.html">
+            
+                <a href="2022-03-28.html">
+            
+                    
+                    19. 删除链表的倒数第 N 个结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >24. 两两交换链表中的节点</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5237;&#x9898;&#x8FDB;&#x5EA6;">&#x5237;&#x9898;&#x8FDB;&#x5EA6;</h1>
+<h2 id="&#x9898;&#x76EE;&#x7C7B;&#x578B;&#xFF1A;">&#x9898;&#x76EE;&#x7C7B;&#x578B;&#xFF1A;</h2>
+<ul>
+<li>[ ] &#x6570;&#x7EC4;</li>
+<li>[x] &#x94FE;&#x8868;</li>
+<li>[ ] &#x54C8;&#x5E0C;&#x8868;</li>
+<li>[ ] &#x5B57;&#x7B26;&#x4E32;</li>
+<li>[ ] &#x6808;&#x4E0E;&#x961F;&#x5217;</li>
+<li>[ ] &#x4E8C;&#x53C9;&#x6811;</li>
+<li>[ ] &#x56DE;&#x6EAF;&#x7B97;&#x6CD5;</li>
+<li>[ ] &#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;</li>
+<li>[ ] &#x52A8;&#x6001;&#x89C4;&#x5212;</li>
+<li>[ ] &#x5355;&#x8C03;&#x6808;</li>
+</ul>
+<h2 id="&#x9898;&#x76EE;&#x53CA;&#x63CF;&#x8FF0;&#xFF1A;">&#x9898;&#x76EE;&#x53CA;&#x63CF;&#x8FF0;&#xFF1A;</h2>
+<p>&#x9898;&#x76EE;&#xFF1A; <a href="https://leetcode-cn.com/problems/swap-nodes-in-pairs/" target="_blank">24. &#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;</a>
+&#x63CF;&#x8FF0;&#xFF1A;&#x7ED9;&#x4F60;&#x4E00;&#x4E2A;&#x94FE;&#x8868;&#xFF0C;&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x5176;&#x4E2D;&#x76F8;&#x90BB;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4EA4;&#x6362;&#x540E;&#x94FE;&#x8868;&#x7684;&#x5934;&#x8282;&#x70B9;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x8282;&#x70B9;&#x5185;&#x90E8;&#x7684;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B8C;&#x6210;&#x672C;&#x9898;&#xFF08;&#x5373;&#xFF0C;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x8282;&#x70B9;&#x4EA4;&#x6362;&#xFF09;&#x3002;</p>
+<p>&#x601D;&#x8DEF;&#xFF1A; &#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x4EA4;&#x6362;&#x76F8;&#x90BB;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x4E86;&#xFF0C;<strong>&#x6B64;&#x65F6;&#x4E00;&#x5B9A;&#x8981;&#x753B;&#x56FE;&#xFF0C;&#x4E0D;&#x753B;&#x56FE;&#xFF0C;&#x64CD;&#x4F5C;&#x591A;&#x4E2A;&#x6307;&#x9488;&#x5F88;&#x5BB9;&#x6613;&#x4E71;&#xFF0C;&#x800C;&#x4E14;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;</strong></p>
+<p>&#x521D;&#x59CB;&#x65F6;&#xFF0C;cur&#x6307;&#x5411;&#x865A;&#x62DF;&#x5934;&#x7ED3;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x4E09;&#x6B65;&#xFF1A;</p>
+<p><img src="https://code-thinking.cdn.bcebos.com/pics/24.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B91.png" alt="24.&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;1"></p>
+<p>&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;&#x94FE;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://code-thinking.cdn.bcebos.com/pics/24.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B92.png" alt="24.&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;2"></p>
+<p>&#x770B;&#x8FD9;&#x4E2A;&#x53EF;&#x80FD;&#x5C31;&#x66F4;&#x76F4;&#x89C2;&#x4E00;&#x4E9B;&#x4E86;&#xFF1A;</p>
+<p><img src="https://code-thinking.cdn.bcebos.com/pics/24.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B93.png" alt="24.&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;3"></p>
+<h2 id="&#x4EE3;&#x7801;&#xFF1A;">&#x4EE3;&#x7801;&#xFF1A;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">swapPairs</span><span class="hljs-params">(ListNode head)</span> </span>{
+        ListNode dummyNode = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>,head);
+        ListNode pre = dummyNode;
+        <span class="hljs-keyword">while</span>(pre.next != <span class="hljs-keyword">null</span> &amp;&amp; pre.next.next != <span class="hljs-keyword">null</span>){
+            ListNode temp = <span class="hljs-keyword">null</span>;
+            temp = head.next.next;
+            pre.next = head.next;
+            head.next.next = head;
+            head.next = temp;
+            pre = head;
+            head = head.next;
+        }
+
+         <span class="hljs-keyword">return</span> dummyNode.next;
+
+    }
+
+    }
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x9012;&#x5F52;&#x7248;&#x672C;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">swapPairs</span><span class="hljs-params">(ListNode head)</span> </span>{
+        <span class="hljs-comment">// base case &#x9000;&#x51FA;&#x63D0;&#x4EA4;</span>
+        <span class="hljs-keyword">if</span>(head == <span class="hljs-keyword">null</span> || head.next == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">return</span> head;
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span>
+        ListNode next = head.next;
+        <span class="hljs-comment">// &#x8FDB;&#x884C;&#x9012;&#x5F52;</span>
+        ListNode newNode = swapPairs(next.next);
+        <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x4EA4;&#x6362;</span>
+        next.next = head;
+        head.next = newNode;
+
+        <span class="hljs-keyword">return</span> next;
+    }
+}
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;&#xFF1A;">&#x603B;&#x7ED3;&#xFF1A;</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2022-03-24.html" class="navigation navigation-prev " aria-label="Previous page: 206. 反转链表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2022-03-28.html" class="navigation navigation-next " aria-label="Next page: 19. 删除链表的倒数第 N 个结点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"24. 两两交换链表中的节点","level":"1.3.12","depth":2,"next":{"title":"19. 删除链表的倒数第 N 个结点","level":"1.3.13","depth":2,"path":"算法/2022-03-28.md","ref":"算法/2022-03-28.md","articles":[]},"previous":{"title":"206. 反转链表","level":"1.3.11","depth":2,"path":"算法/2022-03-24.md","ref":"算法/2022-03-24.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"算法/2022-03-26.md","mtime":"2022-04-13T11:08:33.848Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-13T11:24:57.905Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
