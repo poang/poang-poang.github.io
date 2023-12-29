@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON2KML</title>
+</head>
+<body>
+    <h2>UPLOAD JSON</h2>
+    <input type="file" id="fileInput" accept=".json">
+    <button onclick="loadFile()">UPLOAD</button>
+    <pre id="fileContent"></pre>
+    <style>
+        body {
+            background-color: #87CEEB; /* 浅蓝色背景 */
+            font-family: Arial, sans-serif;
+            text-align: center; /* 居中对齐文本 */
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: white;
+        }
+        #fileInput, button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* 圆角边框 */
+            font-size: 20px;
+            cursor: pointer; /* 鼠标悬停时的手型图标 */
+        }
+        #fileInput {
+            background-color: green;
+            color: white;
+        }
+        button {
+            background-color: #008CBA; /* 蓝色 */
+            color: white;
+        }
+        #downloadLink {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* 深绿色 */
+        color: white;
+        border-radius: 5px;
+        text-decoration: none; /* 去除下划线 */
+        font-size: 16px;
+        border: 1px solid #3e8e41; /* 添加边框 */
+        }
+
+        #fileContent {
+            margin-top: 20px;
+            color: black;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+    
+    <script>
+        function loadFile() {
+            var input = document.getElementById('fileInput');
+            var file = input.files[0];
+            var reader = new FileReader();
+            var kmlHead = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+'<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">\n' +
+'<Document>\n' +
+'    <name>FlightAware ✈ CSH9101 2023年 12月 24日 (SHA / ZSSS-PKX / ZBAD)</name>\n' +
+'    <Placemark>\n' +
+'        <name>ZSSS Airport</name>\n' +
+'        <description><![CDATA[Shanghai Hongqiao Int\'l <br> 上海 上海虹桥 CN<br><br><a href=\'http://www.flightaware.com/live/airport/ZSSS\'>ZSSS airport activity (live)</a><br><a href=\'http://www.flightaware.com/resources/airport/ZSSS\'>ZSSS airport information</a>]]></description>\n' +
+'        <Point>\n' +
+'            <coordinates>121.336319,31.197875,0</coordinates>\n' +
+'        </Point>\n' +
+'    </Placemark>\n' +
+'    <Placemark>\n' +
+'        <name>ZBAD Airport</name>\n' +
+'        <description><![CDATA[Beijing Daxing International Airport <br> Beijing<br><br><a href=\'http://www.flightaware.com/live/airport/ZBAD\'>ZBAD airport activity (live)</a><br><a href=\'http://www.flightaware.com/resources/airport/ZBAD\'>ZBAD airport information</a>]]></description>\n' +
+'        <Point>\n' +
+'            <coordinates>116.410556,39.509166999999998,0</coordinates>\n' +
+'        </Point>\n' +
+'    </Placemark>\n' +
+'    <Placemark>\n' +
+'        <name>CSH9101</name>\n' +
+'        <description>ZSSS - ZBAD</description>\n' +
+'        <gx:Track>\n' +
+'            <extrude>1</extrude>\n' +
+'            <tessellate>1</tessellate>\n' +
+'            <altitudeMode>absolute</altitudeMode>\n' +
+'            <when>2023-12-24T11:04:19Z</when>\n';
+         var kmlTail = '        </gx:Track>\n' +
+'    </Placemark>\n' +
+'    <ScreenOverlay>\n' +
+'        <name>FlightAware</name>\n' +
+'        <Icon>\n' +
+'            <href>https://www.flightaware.com/images/logo_ge.png</href>\n' +
+'        </Icon>\n' +
+'        <overlayXY x="1" y="-1" xunits="fraction" yunits="fraction"/>\n' +
+'        <screenXY x="1" y="0" xunits="fraction" yunits="fraction"/>\n' +
+'        <size x="0" y="0" xunits="fraction" yunits="fraction"/>\n' +
+'    </ScreenOverlay>\n' +
+'</Document>\n' +
+'</kml>\n';
+
+            reader.onload = function(e) {
+                var content = e.target.result;
+	var locationString = ""
+                try {
+	    var jsonArray = JSON.parse(content);
+   	    for (var i = 0; i < jsonArray.length; i++){
+
+                    var item = jsonArray[i];
+                    var latitude = item.latitude; 
+                    var longitude = item.longitude;
+                    var locationString = locationString  + "<gx:coord>" + "longtitude: " + longitude + ", latitude: " + latitude + "</gx:coord>" +"\n";
+                    //document.getElementById('fileContent').textContent = locationString;
+           
+
+	      }
+
+            var kmlContent = kmlHead + locationString + kmlTail;      
+            // 创建下载链接
+            var downloadLink = document.createElement('a');
+            var kmlFileName = file.name.replace(/\.[^/.]+$/, "") + ".kml"; // 使用上传文件的名称，但更改扩展名为.kml
+            downloadLink.href = 'data:application/vnd.google-earth.kml+xml;charset=utf-8,' + encodeURIComponent(kmlContent);
+            downloadLink.download = kmlFileName;
+            downloadLink.textContent = 'Download ' + kmlFileName;
+            downloadLink.style.display = 'block';
+            document.body.appendChild(downloadLink);
+                } catch (e) {
+                    console.error('error', e);
+                    document.getElementById('fileContent').textContent = 'can not parse content';
+                }
+            };
+
+            reader.readAsText(file);
+        }
+    </script>
+</body>
+</html>
